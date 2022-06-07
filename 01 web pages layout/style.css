@@ -1,0 +1,145 @@
+* {
+  box-sizing: border-box;
+}
+
+.header{
+  background-color: #f1f1f1;
+  text-align: center;
+ padding: 20px;
+}
+
+.navigation{
+  margin: 10px 0;
+  background-color: grey;
+}
+
+.navigation ul{
+    list-style-type: none;
+    padding: 0; margin:0;
+}
+.navigation ul li{
+  float: left;
+}
+
+.navigation:after{
+  content: "";
+  clear: both ;
+  display: table;
+}
+
+.navigation ul li>a{
+  display: block;
+  padding: 14px 16px;
+  text-decoration: none;
+  font: bold 15px verdana;
+
+}
+
+.navigation ul li>a:hover{
+  background-color: white;
+}
+.right {
+  float: right;
+}
+
+
+.dropdown-content{
+  position:absolute;
+  display:none;
+  background-color: grey;
+}
+.dropdown-content a{
+  display: block;
+  text-decoration: none;
+  padding: 14px 16px;
+  font: bold 15px verdana;
+  border-bottom: 1px solid white;
+}
+
+.dropdown-content a:hover{
+  background-color: white;
+
+}
+.dropdown:hover .dropdown-content{
+display: block;
+}
+.main-content-row{
+  background-color: gold;
+  margin-bottom: 10px;
+}
+.sub-content-col-01, .sub-content-col-02, .sub-content-col-03 {
+  width: 33.33%;
+  float:left;
+  box-sizing: border-box;
+  padding: 10px;
+}
+
+/* this is the copied code without understanding*/
+.main-content-row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+.fakeimgae {
+  text-align: center;
+  padding-top: 100px;
+  background-color: orange;
+}
+
+
+.footer{
+  background-color: cyan;
+}
+
+.footer table{
+  width: 100%;
+}
+.footer td, th {
+  padding: 15px;
+
+}
+.footer th {
+  text-decoration: underline;
+}
+.footer table tbody tr td{
+  text-align: center;
+}
+
+@media screen and (max-width:900px) {
+  .sub-content-col-01, .sub-content-col-02 {
+    width: 50%;
+  }
+}
+@media screen and (max-width:900px) {
+  .sub-content-col-03 {
+    width: 100%;
+  }
+}
+
+
+@media screen and (max-width:600px) {
+  .sub-content-col-01, .sub-content-col-02, .sub-content-col-03 {
+    width: 100%;
+  }
+  .navigation ul li{
+    display: block;
+    float:none;
+    text-align: center;
+    border-bottom: 2px solid white;
+
+  }
+  .navigation ul li a:hover{
+    background-color: white;
+  }
+  .navigation ul li:last-child {
+    border: none;
+  }
+  .right{
+    float: none;
+  }
+  .dropdown-content {
+    right:0;
+  }
+}
+
