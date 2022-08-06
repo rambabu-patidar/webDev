@@ -1,0 +1,26 @@
+
+body{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height:100vh;
+    margin: 0;
+    overflow: auto;
+}
+.bulb{
+    width: 200px;
+    
+}
+.message{
+    margin-left: 30%;
+    font-size: larger;
+    font-family: arial;
+}
+.on-off{
+    margin-left: 20%;
+    padding: 5px;
+    border: 2px solid white;
+    border-radius: 10px;
+    font-family: arial;
+    font-size: larger;
+}

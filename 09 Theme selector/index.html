@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Theme</title>
+    <!-- This is replaced by the javascript line of code to 
+        gain extra familiarity with the javascript-->
+    <!-- <style>
+        body{
+            text-align: center;
+        }
+    </style> -->
+</head>
+<body>
+    <div class="container">
+        <h1>Theme Selector</h1>
+        <select name="theme" class="theme-select">
+            <option value="white">White</option>
+            <option value="dark">Black</option>
+        </select>
+    </div>
+
+    <script>
+        const select = document.querySelector('.theme-select');
+        const wholeColor = document.querySelector('html');
+        document.body.style.textAlign = 'center';
+        function changeTheme(bgColor, textColor) {
+            wholeColor.style.backgroundColor = bgColor;
+            wholeColor.style.color = textColor;
+
+        }
+
+        select.addEventListener('change', () => 
+        select.value === 'dark'?
+         changeTheme('black', 'white'):
+         changeTheme('white', 'black')
+        );
+    </script>
+</body>
+</html>
