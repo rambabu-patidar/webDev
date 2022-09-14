@@ -1,0 +1,104 @@
+@import url('https://fonts.googleapis.com/css2?family=Kanit&family=Sofia&display=swap');
+
+h1{
+    text-align: center;
+    text-decoration: underline;
+    font-weight: bolder;
+    font-family: Kanit;
+    font-size: xx-large;
+    position:sticky;
+    top: 0;
+    background-color:cadetblue;
+    text-shadow: 2px 2px 5px aqua;
+}
+
+h1:hover{
+    background-color:white;
+}
+
+ul{
+    list-style: none;
+    display: flex;
+    background-color:azure;
+    border-left: 10px solid blue;
+    
+}
+li{
+ 
+    padding: 20px 40px 20px 40px;
+   border-right: 1px solid black;
+   border-left: 1px solid black;
+   float: left;
+    
+
+}
+li a.active{
+    background-color: aqua;
+    color: white;
+
+}
+li:hover:not(.active){
+    background-color: bisque;
+}
+
+li a{
+    text-decoration: none;
+    font-size: larger;
+    color: dodgerblue;
+    font-weight: lighter;
+    display: block;
+}
+.me pre{
+    font-size: larger;
+    font-weight: bold;
+}
+.me{
+    display: flex;
+}
+.me img{
+    width:500px; 
+    border-radius: 400px;
+}
+.showcase{
+    background-color: gainsboro;
+}
+.showcase h3{
+    text-align: center;
+    text-decoration: underline;
+    text-decoration-color: deeppink;
+    padding: 20px;
+}
+.secondidea p{
+margin:0;
+   
+    
+}
+
+.tablemaking{
+    background-color:rgb(223, 219, 172);
+    border-right:10px solid black;
+}
+
+
+table{
+   margin-left: 20px;
+   position: relative;
+   margin: auto;
+    
+
+}
+table,tr, th, td{
+    border: 2px solid white;
+    border-collapse: collapse;
+}
+th, td{
+    padding: 15px;
+}
+th{
+    background-color: bisque;
+    font-size: larger;
+}
+td{
+    font-weight: bolder;
+    background-color:azure
+}

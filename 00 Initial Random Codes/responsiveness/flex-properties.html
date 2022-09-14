@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>flex boc</title>
+    <style>
+      .container-one {
+        background-color: #f2f2f2;
+        /* margin:10px; */
+        border-radius: 10px;
+        padding: 10px;
+        display: flex;
+        flex-wrap: wrap;
+      }
+      .box-1,
+      .box-2,
+      .box-3 {
+        width: 33%;
+        height: 200px;
+        justify-content: center;
+      }
+      .box-4,
+      .box-5,
+      .box-6,
+      .box-7 {
+        width: 25%;
+        height: 25px;
+      }
+      .box-8,
+      .box-9,
+      .box-10,
+      .box-11,
+      .box-12 {
+        width: 19.5%;
+        height: 25px;
+      }
+      .container-in {
+        background-color: cyan;
+        margin: 2px;
+        /* padding: 5px; */
+        display: flex;
+        flex-wrap: wrap;
+        border-radius: 10px;
+        
+        
+        
+
+      }
+      .box21,
+      .box22,
+      .box23 {
+        width: 33%;
+        height: 25px;
+      }
+      .box24,
+      .box25,
+      .box26,
+      .box27 {
+        width: 25%;
+        height: 25px;
+      }
+      .box28,
+      .box29,
+      .box30,
+      .box31,
+      .box32 {
+        width: 19%;
+        height: 25px;
+      }
+
+      .subbox {
+        background-color: darkorange;
+        /* margin: 2px; */
+        border-radius: 5px;
+        /* padding: 2px; */
+        text-align: center;
+        
+        
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container-one">
+      <div class="container-in box-1">
+        <div class="subbox box21">box21</div>
+        <div class="subbox box22">box22</div>
+        <div class="subbox box23">box23</div>
+        <div class="subbox box24">box24</div>
+        <div class="subbox box25">box25</div>
+        <div class="subbox box26">box26</div>
+        <div class="subbox box27">box27</div>
+        <div class="subbox box28">box28</div>
+        <div class="subbox box29">box29</div>
+        <div class="subbox box30">box30</div>
+        <div class="subbox box31">box31</div>
+        <div class="subbox box32">box32</div>
+      </div>
+      <div class="container-in box-2">box-2</div>
+      <div class="container-in box-3">box-3</div>
+      <div class="container-in box-4">box-4</div>
+      <div class="container-in box-5">box-5</div>
+      <div class="container-in box-6">box-6</div>
+      <div class="container-in box-7">box-7</div>
+      <div class="container-in box-8">box-8</div>
+      <div class="container-in box-9">box-9</div>
+      <div class="container-in box-10">box-10</div>
+      <div class="container-in box-11">box-11</div>
+      <div class="container-in box-12">box-12</div>
+    </div>
+  </body>
+</html>

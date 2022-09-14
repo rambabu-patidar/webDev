@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="paymentform.css">
+    <title>Payment Form </title>
+    <style>
+        @media  screen and  (max-width: 600px) {
+            body{
+                color: crimson;
+            }
+            
+        }
+    </style>
+</head>
+
+<body>
+    <form action="">
+
+      <header>
+      <h1 style="font-size: 200%;"> Payment Form</h1>
+      </header>
+      <p>Name: <input type="text" name="name" id="name" placeholder=" e.g. Nitin Sharma"></p>
+      <p>Mobile No.: <input type="number" name="number" id="number" placeholder="e.g. 9131034894"></p>
+      <p>Date Of Birth : <input type="date" name="date" id="date"></p>
+      <fieldset>
+          <legend>Gender</legend>
+          <p>  Male:<input type="radio" name="gender " id="gender"> female: <input type="radio" name="female" id="gender"></p>
+        </fieldset>male
+      <p>Email: <input type="email" name="email" id="email" placeholder="e.g. patidarrambabu5433@gmail.com"></p>
+      <p>Address: <textarea name="address" id="address" cols="45" rows="10"></textarea></p>
+      <p>Pin Code <input type="number" name="pincode" id="pincode" placeholder="e.g. place-area-locality-city-state-country-country code "></p>
+
+
+      <h1 style="font-size: 200%; text-align: center; text-decoration: underline; color: crimson; background-color: rgba(255, 255, 0, 0.699);" >Card Details</h1>
+      <p>
+        Card Type: *
+        <select name="card_type" id="card_type" required>
+            <option value="">--select a card type--</option>
+            <option value="rupay">Rupay</option>
+            <option value="mastercard">Mastercard</option>
+            <option value="visa">Visa</option>
+      
+        </select>
+
+
+    </p>
+    <p>
+        Card Number:* <input type="number" name="card_number" id="card_number" placeholder="e.g. 987456321125" required>
+    </p>
+    <p>
+        Expiration Date:* <input type="date" name="expiration_date" id="expiration_date" placeholder="e.g. 24/08/2025" required>
+    </p>
+    <p>
+         CVV Number:* <input type="password" name="CVV" id="CVV" placeholder="***"  required>
+    </p>
+     <p>
+          <input type="submit" value="Pay Now">
+     </p>
+    </form>
+    
+</body>
+</html>

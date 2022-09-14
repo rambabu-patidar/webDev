@@ -1,0 +1,146 @@
+body {
+  font-family: "Times New Roman", Times, serif;
+  font-size: large;
+  margin: 50px;
+  padding: 25px;
+  /* border: dashed; */
+  /* background-color: rgba(71, 172, 255, 0.425); */
+  background-image: url(data:image/jpeg;base64,/9j/4AAQSkZJRgABAQAAAQABAAD/2wCEAAkGBw0PEBAPDQ8NDQ0NDw8NDQ0NDQ8NDQ0NFREWFhURFRUYHSggGBolGxUVITEhJSkrLi4uFx8zODMsOCgtLisBCgoKDg0OFQ8NFS4ZFRktKy03LS0rKystLTcrLSsrKysrLS0vLS0tKzctKzctNzcrKzc3LSstLTctLS0rLSsrLf/AABEIAKgBLAMBIgACEQEDEQH/xAAZAAADAQEBAAAAAAAAAAAAAAABAgMABAX/xAArEAADAAICAQIFBAIDAAAAAAAAAQIDERIhMVGRQWFxoeEEE1KSgcEiMvD/xAAZAQEBAQEBAQAAAAAAAAAAAAABAAIDBAX/xAAaEQEBAQEBAQEAAAAAAAAAAAAAERIBYQIh/9oADAMBAAIRAxEAPwD3GzbF2Bs8UfGOmNsmmHZQnbDJJseGUPFWxGwOhdlCtLGTJcgphC10ZMm67GlmYFNkLZVs5roO8XS2yFMpbIUzHeM9HYNi7NsIycYlsfYxMwAbNsgYBkwbFCY2wbNcB4K2iMs6Pga4kCgjGT6NcBn5FNTA2dOABWFsFGucAJloo59jRRvidIATQWb4T7NsR0BM80dFUw7J7NsYT7Kb6ISxnRQndBhknQ0vp+wQ8O6GdEVXYaoIa3LstJzQ+zpQZXGyHLdF8tHHVB3i610RbDdEmzMZM2bYjYNmchRMfZHY2xyjNm2TbDsoFEzbJph2UR0zbJphbNQKJnTD6ONUdGBmucRaYYYuXyCWa5wKN9ATN6k9m4DNg2BsGzXOBmDYKYuzfOB0Y6KqjjitF1RvhO2ZMm2FM4R0U2bZPZtjlKyzciewciyVHQzrpEFQ1UGSrLBdCSxKospbCzp2ceFl+QZa4GajkdFc1HK6DvyOtdE3QLoTkZyDtg2I2DZZSuxtkUxtlkGbDsk6DyLKUTDyJKjciyFUzbJqjbHKVTL4KOTZXDQ84HR+oJTRTOzmVG8rrqhk7BLNlf3NQNvo2ycsbZrnAzYNgbF2a5wNsrOQg2bka5xOnYeRJMPI55bU5G5E9g2OSq6F5E3QHRZS0s3IlLDyLJWVdCVQroR0WU6sb6Kqjml9FN9BlrhM9HNyGz0Q5Bkda6E5C1QvIMo7oCoR0DkWUqqH2Q5DtlkGdG5E3RuQZSqo3IkqDscpTkHZLYdllKbKY6OfY8UPPkO63tHPspNf8SDZrI6vFDW+voznmi1P7o1AnyHTItjTQxHbFbC2I2a5wC2JszYrZqB0bNsns3IzltTYORPZqoco3IHIm6MmWUtyCmSbCmWSpVCJ9iugQ+xynUqKN9HPND3XQZa4hnojyDnojyLIaqAqJujJhknqgKhKZkyylNjNkdjNlkHbNsm2bZZSioOyWzbLKVTDsmqBsspZMM0SlhTLId2GuiVsGCgZGOUbkXVdL5HHyK4snle31GBrYJoW2LyGB1bEpgiujUMQNiszE2MCuzbJ7NsclRMWqBsR0OUZ0aWTdDSxyVHRlRPZuRZR3RsbJNjQyyuOmGPkojjYctBlpzZq7JcjZa7JtjlDsKr5k6fkVMslVsCZM2yylN9jNkU+xmyyD8jcvmTdA2GStsDZNPsLZZBuQVRLkFUWUtNDUyCobZZTpw12UzM5cdF8j6LIBMHIRMDY5C3IXYioGyyHTiopRy467OhvoYSNisNCtjALZtk9hTNQHbEbNTJtjkm2OmRTHbLJNs2xNg2MB6YUyTYyZQ8dWJmysXGxM1BGnLb7EbBTFbGAzf3AmJsOyhNyByECiiMmM2TQSiNRkwGKIUzN9AoVsoh2FMRsyZRKJjbJbG2GUrNHS66OJM6YrosouzNiUwNlkKbM2T2ZsYFZo64e0eeqOv8AT0ER2S2WIsYCpjISSqR0yxSUJRRonRZNCR6BCDY5NIECG0ORShRgosqrSyOa/I7fRy57M5deIugVRN0B0MB1Q6ZB0PNFCceUSbLR4HnB3raFZVIlXksiijMKFosqs2KZsJZVKzGYH4LKpkxicFGWR3ooviZzyWxMsqtYGPQpZVADYwlMsilVF8GQ43XZTHZmNvT5diX5Ei+kVXZZZ71Kbn5+5VZY9H7nGkMkOmM8dDzR6P3/AASrNHo/f8EaRO0Vazx2Rnj0fuCss+n3OXGPSHSzxackfHfuP+7j9H/b8HG0HQ0Z46Xmx+j/ALfgV5p+Cfuc7QUipzx0N7+RzZ4+b+x1QuiWdeTNdHnOfmzaKNC0hoTHlfMGiklSHw8nTiudLZzDSNHeV2LLj9H7nPdLZL4jUVGeKTknre/cGW5+G/ckwaLSzw/NDLLPnT19SNIWkWlld5Y9H7geSWtafuc7QUi0scVjIl5W/wDJd5Ya8P3/AAcmg6LSzx0xlleU3/kpGWPR+5x6K4YLSzx2PLHo/f8AAv7uP0fv+CGRCaLQzx0/ux6P3/AluX42iCQyRaWeJXHfkaJfqbXZXFJmtOjEnotFaXjYZnpBroNDvOOdIZIKXgbRzrKdInSOi5JNDSlKKNA0VSKlLRtDtGSGjqbQUh6kyRVcVxiZkVxoGSQrbzaQtItkXYjRqhHQ6M0GUFJTSFo0oqg+IzBrsZoaCAGZgpBi6HaA0VRGjJDtGSKouhtB0NoKi6OnBJJI68U9FU58iFaKWgUhoTSDrodSakVCUo6f02PeiUyd36WdBSprv6Esj7KtnPXkqDpdL6IOjGOVZFronxMYqS8Rl4MYaQUjcTGKrpbRpQTDRxbEg5UYxmt8cGSexHPRjGqEqQUjGKlmgSgmKpmuw0jGKotIyRjFU2jaMYKQaDoJiqFIOjGKg8Sdev8AiYwVN+1i/m963rg/YzxYttO/TvTWvO3rXfw+5jCr4KxYf5vy/h4Xw/8AfMLw4dd29v5Pr69AMX6NeDH6fE2ksnx8ta2v9HXjx40v+7/q/HqYwK+EqMf8/XvT+Wv9iPDj/n578IxhF8f/2Q==);
+  background-repeat: repeat-y;
+  background-size: contain;
+  
+}
+.clip-circle{
+  clip-path: polygon(50% 0%, 100% 50%, 50% 100%, 0% 50%);
+}
+.heading {
+  text-align: center;
+  font-size: 75px;
+  font-weight: 700;
+  color: rgb(55, 0, 255);
+  text-decoration: underline;
+}
+nav ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  overflow: hidden;
+  background-color: rgb(0, 217, 255);
+  
+}
+nav ul li {
+  float: left;
+  margin: 25px;
+  padding: 20px;
+  word-spacing: 60px;
+  font-weight: bolder;
+}
+nav ul li a {
+  text-decoration: none;
+  background-color: cornflowerblue;
+  margin: 20px;
+  padding: 25px;
+  border: 2px solid white;
+  border-radius: 10px;
+  color: white;
+}
+nav ul li a:hover {
+  color: rgb(0, 0, 0);
+  background-color: green;
+}
+.about {
+  font-size: xx-large;
+  font-weight: 400;
+  margin: 50px;
+  padding: 25px;
+  border: wheat;
+  background-color: papayawhip;
+}
+.middlepart {
+  /* background-color: thistle; */
+  margin: 25px;
+  padding: 40px;
+  /* border: 2px solid yellow; */
+}
+.login {
+  text-align: center;
+  color: white;
+  border: 10px solid white;
+  background-image: url(https://png.pngtree.com/thumb_back/fh260/background/20201101/pngtree-3d-rendering-for-display-product-banner-on-website-image_453005.jpg);
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: center;
+}
+label {
+  font-size: 25px;
+  font-weight: 500;
+  float: inline-start;
+}
+.ptag {
+  margin: 3px;
+  padding: 5px;
+}
+input {
+  border: 2px solid rgb(0, 0, 0);
+  padding: 5px;
+  border-radius: 10px;
+  background-color: rgba(245, 222, 179, 0.356);
+}
+.agreetext {
+  font-size: larger;
+  font-weight: 900;
+}
+input[type="button"] {
+  font-size: larger;
+  background-color: red;
+  color: white;
+  padding: 10px;
+}
+input[type="button"]:hover {
+  color: brown;
+  background-color: green;
+}
+.socialc{
+    border: 2px solid white;
+    background-color: thistle;
+    background-image: url(http://www.opperdesign.com/wp-content/uploads/2018/01/hd-pics-photos-stunning-attractive-social-media-2-hd-desktop-background-wallpaper.jpg),url(https://graphicriver.img.customer.envatousercontent.com/files/108533992/Social-1%201.jpg?auto=compress%2Cformat&q=80&fit=crop&crop=top&max-h=8000&max-w=590&s=23c933bf1fe68af4e207b5c66a59b62f);
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: left;
+    background-position-x: right;
+    
+    
+}
+.followheading{
+    text-align: center;
+    text-decoration: underline;
+    font-size:xx-large;
+    font-weight: 600;
+    color: blue;
+}
+.socialhandels{
+    
+    list-style: none;
+    text-align: center;
+}
+.social{
+    /* float: left; */
+    padding-left: 20px;
+    margin: 25px;
+   overflow: hidden;
+    word-spacing: 100px;
+    font-size: xx-large;
+    text-decoration: none;
+    color: tomato;
+    font-weight: 700;
+    letter-spacing: 1px;
+    
+}
+.social:hover{
+    color: rgb(94, 255, 0);
+    background-color: rgba(212, 208, 163, 0.562);
+}
+.bottom{
+
+
+}

@@ -1,0 +1,22 @@
+header h1{
+    text-align: center;
+}
+nav a[href="https://www.instagram.com/rambabupatidar_" ]{
+    color: teal;
+}
+body main section h2+p .ram{
+    color: darkblue;
+ text-align: center;
+ font-weight: bolder;
+ background-color: darkgray;
+}
+a:hover{
+    color: brown; 
+    text-decoration: none;
+}
+nav a{
+    font-weight: 500%;
+}
+
+
+
