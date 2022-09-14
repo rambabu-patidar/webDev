@@ -1,0 +1,162 @@
+@import url("https://fonts.googleapis.com/css2?family=Odibee+Sans&display=swap");
+@import url('https://fonts.googleapis.com/css2?family=Baloo+Tammudu+2&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans&display=swap');
+* {
+  margin: 10px;
+  padding: 10px;
+  
+}
+body{
+    background-color: aliceblue;
+    border-right: 1px solid black;
+    border-bottom: 1px solid black;
+    border-left: 1px solid black;
+    
+}
+div.top {
+  font-family: odibee Sans;
+  text-align: center;
+  font-size: 35px;
+  text-decoration: underline;
+  padding-top: 100px;
+  padding-bottom: 100px;
+  background-image: url(https://backgroundcheckall.com/wp-content/uploads/2017/12/professional-portfolio-background-6.jpg);
+  max-width: 100%;
+}
+nav {
+  margin: 0px;
+  padding: 0px;
+  position: sticky;
+  top: 0px;
+}
+nav ul {
+  list-style: none;
+  overflow: hidden;
+  background-color: rgb(0, 0, 0);
+}
+nav ul li {
+  float: left;
+  margin: 0px;
+  padding: 0;
+  border-left: 2px solid rgb(255, 255, 255);
+}
+nav ul li a {
+  display: block;
+  padding: 14px 16px;
+  font-size: 25px;
+  
+  text-decoration: none;
+  color: rgb(255, 255, 255);
+  font-weight: 500;
+}
+nav ul li.awards{
+    float: right;
+}
+h2{
+    text-align: center;
+    font-size: 30px;
+    font-family:Josefin Sans ;
+    border-bottom: 2px solid black;
+
+}
+div img{
+    max-width: 500px;
+    height: 400px;
+    opacity: 0.5;
+
+}
+.block1, .block2, .block3 ,.block4, .block5, .block6{
+    width: 40%;
+    
+}
+
+div.block{
+    width: 100%;
+    display: flex;
+    overflow: auto;
+    flex-wrap: wrap;
+  
+}
+p{
+    font-size: 20px;
+    
+}
+div.block p{
+    font-family: 'Baloo Tammudu 2', cursive;
+}
+input[type="button"]{
+    text-align: center;
+    background-color: rgb(209, 21, 21);
+    border-radius: 5px;
+    font-weight: 600;
+    
+}
+footer{
+    background-color: rgba(127, 255, 212, 0.733);
+    display: flex;
+    border-top: 1px solid black;
+}
+footer h3{
+    text-align: center;
+    text-decoration: underline;
+    color: rgb(255, 255, 255);
+    margin-top: 40px;
+    margin-bottom: 30px;
+    font-size: 30px;
+    border-right: 5px solid rgb(255, 0, 234);
+}
+footer ul{
+    list-style: none;
+    flex-wrap: nowrap;  
+}
+footer ul li a{
+    text-decoration: none;
+}
+.instagram , .facebook, .youtube,.twitter{
+    height: 100px;
+}
+
+nav ul li a:hover:not(.home){
+    background-color: white;
+    color: black;
+}
+.home{
+    background-color: chartreuse;
+}
+h2:hover{
+    background-color: lawngreen;
+}
+div img:hover{
+    opacity: 1;
+    border: 2px solid lightcoral;
+}
+div.block p:hover {
+    color: blue;
+    background-color: lightcyan;  
+}
+input[type="button"]:hover{
+    background-color: lawngreen;
+}
+@media (max-width: 1200px) {
+    nav ul li , nav ul li.awards{
+        float: none;
+        text-align: center;
+        border-left: 10px solid white;
+    }
+     
+    div.block{
+        display: initial;
+        display: block;
+        margin-left: 0px;
+        margin-right: 0px;
+        
+    }
+    footer {
+        display: grid;
+       
+    }
+    nav{
+        position:initial;
+      }
+}
