@@ -19,3 +19,7 @@
 8. [08 Weather message](https://rambabu-patidar.github.io/webDev/08%20Weather%20message/)
 
 9. [09 Theme selector](https://rambabu-patidar.github.io/webDev/09%20Theme%20selector/)
+
+10. [10 Random background](https://rambabu-patidar.github.io/webDev/10%20Random%20background/)
+
+11. [10 Random balls](https://rambabu-patidar.github.io/webDev/11%20Random%20balls/)
