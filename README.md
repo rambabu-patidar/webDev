@@ -23,3 +23,5 @@
 10. [10 Random background](https://rambabu-patidar.github.io/webDev/10%20Random%20background/)
 
 11. [10 Random balls](https://rambabu-patidar.github.io/webDev/11%20Random%20balls/)
+
+12. [12 Image gallery](https://rambabu-patidar.github.io/webDev/12%20Image%20gallery/)
