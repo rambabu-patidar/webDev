@@ -1,0 +1,148 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font: 2rem 'Roboto',sans-serif;
+    
+    background-color:aliceblue;
+    background-image:radial-gradient(aliceblue, lightblue);
+
+    display:flex;
+    flex-direction:column;
+    justify-content:center;
+}
+
+main{
+    flex-grow: 1;
+}
+
+footer{
+    position:sticky;
+    bottom: 0;
+}
+.top-section{
+    position: sticky;
+    top:0;
+    padding: 0.5rem;
+    display:grid;
+    grid-auto-flow:row;
+    justify-content:center;
+    row-gap:0.5rem;
+
+    background-color: #ffd900;
+}
+
+nav{
+    border-bottom: 2px solid black;
+}
+
+nav ul {
+    list-style-type: none;
+    display: flex;
+    flex-direction:row;
+    flex-wrap: wrap;
+}
+
+nav ul li a, nav ul li a:visited{
+    text-decoration: none;
+    color: #000;
+    display: block;
+    background-color: bisque;
+    padding: 0.2em;
+}
+
+img {
+    display: block;
+}
+
+.main-content{
+    padding: 2rem;
+    display:flex;
+    flex-direction:column;
+    gap: 2rem;
+}
+
+article{
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+    border:5px solid #fff;
+    border-radius: 20px;
+    padding: 0.5rem;
+
+}
+article p{
+    padding-top: 0.2rem;
+    text-align: center;
+}
+.card-content{
+    display:flex;
+    flex-direction:column;
+    align-items: center;
+    padding: 1rem;
+    border-bottom: 5px solid white;
+}
+
+.card-content img{
+    width: 69%;
+    height: auto;
+    border: 4px double rgb(33, 102, 141);
+    border-radius: 50%;
+}
+footer{
+    background-color:#262626;
+    padding: 1rem;
+    color:aliceblue;
+}
+footer p{
+    text-align: center;
+}
+footer a , footer:visited{
+    color: #fff;
+}
+.nowrap{
+    white-space: nowrap;
+}
+
+@media screen and (min-width:500px){
+    .main-content{
+        flex-direction: row;
+        flex-wrap:wrap;
+        justify-content: center;
+        align-items: center;
+    }
+    article{
+        width:min(100%, 300px);
+    }
+    .card-content{
+        flex-direction: column-reverse;
+    }
+}
+
+@media screen and (min-width:650px) {
+    .main-content{
+        font-size: 1.5rem;
+    }
+    article{
+        width: min(100%, 250px);
+    }
+    .card-content{
+        flex-direction:column-reverse;
+    }
+}
+
+
+@media screen and (min-width: 1000px) {
+    article{ 
+        
+        width: min (calc(33% - 2rem), 200px);
+    }
+    nav{
+        display:none;
+    }
+}

@@ -1,4 +1,4 @@
-1. [01 Introduction](https://rambabu-patidar.github.io/webDev/001.1%20CSS01%20Introduction)
+1. [01 Introduction](https://rambabu-patidar.github.io/webDev/001.1%20CSS/01%20Introduction)
    
 2. [02 Inline block and float property](https://rambabu-patidar.github.io/webDev/001.1%20CSS/02%20Inline-block%20and%20float%20property)
    
@@ -21,4 +21,4 @@
 11. [11 Animation](https://rambabu-patidar.github.io/webDev/001.1%20CSS/11%20Animation)
 
 
-## **[12 CSS PROJECTS](https://rambabu-patidar.github.io/webDev/001.1%20CSS/12%20CSS-PROJECTS)**
+## **[CSS PROJECTS](https://rambabu-patidar.github.io/webDev/001.1%20CSS/CSS-PROJECTS)**

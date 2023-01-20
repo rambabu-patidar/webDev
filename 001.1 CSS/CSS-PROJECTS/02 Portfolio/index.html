@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en-US">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="author" content="Rambabu Patidar">
+        <meta name="description" content="This is my personal portfolio website">
+        <meta name="viewport" content="width=device-width;initial-scale=1.0">
+        <title>Rambabu Patidar</title>
+
+        <style>
+            *{
+                margin: 0;
+                padding: 0;
+                box-sizing:border-box;
+            }
+            body{
+                width:70%;
+                margin: auto;
+                border: 1px solid #eee;
+                font-size:1.3vw;
+                font-family:Arial, Helvetica, sans-serif;
+                height:fit-content;
+            }
+
+            h1{
+                text-align: center;
+                color: blue;  
+            }
+
+            nav ul{
+                list-style-type:none;
+                text-align: center;
+            }
+            li{
+                display:inline-block;
+                padding: 20px;
+            }
+            li a{
+                text-decoration:none;
+                color: orangered;
+            }
+            main{
+                margin: 10px;
+            }
+            section h2.about{
+                text-align:center;
+                text-decoration: underline;
+                padding-bottom: 30px;
+            }
+            p, figure{
+                width: 50%;
+                float:left;
+            }
+            p{
+                text-align:center;
+                vertical-align:middle;
+            }
+            figure{
+                text-align: center;
+            }
+            figure img{
+                border: 2px solid rgb(0, 0, 0);
+                border-radius:10%;
+            }
+            article::after{
+                content:"";
+                clear:both;
+                
+            }
+        </style>
+    </head>
+    <body>
+        <header>
+            <h1>Portfolio</h1>
+            
+            <hr>
+
+            <nav>
+                <ul>
+                    <li><a href="#">About Me</a></li>
+                    <li><a href="#">My Skills</a></li>
+                    <li><a href="#">Experiences</a></li>
+                    <li><a href="#">Contact Me</a></li>
+                </ul>
+            </nav>
+        </header>
+        <hr>
+        <main>
+            <section>
+                <h2 class="about">About Me</h2>
+                <article>
+                    <h2>From Rambabu </h2>
+                    <p>Hello, I am Rambabu Patidar. I am an student of <abbr title="Jabalpur Engineering College, Jabalpur">JEC&nbsp;Jabalpur</abbr>.
+                        <br>
+                        currently I am learing how to code.
+                        <br>
+                        I am very interested in Web Development and now I am giving it a time to learn with my full effort.
+                    </p>
+
+                    <figure>
+                        <img src="../images/rambabu.JPG" alt="This is rambabu Patidar image" title="Rambabu Patidar" width="300" height="450" loading="lazy">
+                        <figcaption>Rambabu Patidar</figcaption>
+                    </figure>
+                </article>
+
+                <aside>
+                    <details>
+                        <summary>
+                            Do you know when is my birthday?
+                        </summary>
+                        My birthday comes in August month.
+                    </details>
+                </aside>
+            </section>
+        </main>
+    </body>
+</html>

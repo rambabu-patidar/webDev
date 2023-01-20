@@ -1,0 +1,112 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+}
+
+html{
+    scroll-behavior:smooth;
+}
+
+body{
+    font-family: 'Roboto','Times New Roman';
+    font-size: 1.5rem;
+}
+.outer-container{
+    border: 0.25em solid #333;
+}
+
+.inner-container{
+    height: 100vh;
+    border-bottom: 0.25rem solid #333;
+}
+
+.header{
+    background-color: gold;
+    text-align: center;
+    padding: 2rem;
+    /* margin-bottom: 2rem; */
+    position:sticky;
+    top:0;
+}
+
+.heading{
+    color: white;
+    cursor:pointer;
+}
+.heading:hover{
+    color:#000;
+    text-decoration:underline;
+}
+
+.first{
+    background-color:rgb(198, 255, 255);
+}
+.second{
+    background-color:rgb(240, 134, 210);
+}
+.third{
+    background-color:rgb(227, 197, 249);
+    border:none;
+}
+.inner-container p {
+    padding: 2rem;
+}
+
+footer{
+    background-color: #444;
+    height:10vh;
+    width:100%;
+    font-size:1.5rem;
+    position: fixed;
+    bottom:0;
+}
+
+footer:hover{
+    background-color:#333;
+}
+ul {
+    list-style-type:none;
+    text-align:center;
+}
+ul li {
+    display:inline-block;
+}
+
+ul li a{
+    color:white;
+    text-decoration:none;
+    display:inline-block;
+    margin-top:20px;
+}
+
+ul li a:visited{
+    color: white;
+}
+
+ul li a:hover{
+    color:#ddd;
+}
+
+
+ul li a:active{
+    color:#f00;
+}
+
+.social{
+    font-size: 3rem;
+    background-color:rgb(255, 255, 255);
+    display:inline-block;
+    position:fixed;
+    top: 200px;
+    border-radius: 0 20px 20px 0;
+    z-index: 1;
+}
+.heart{
+    cursor:pointer;
+}
+.rocket{
+    cursor:progress;
+}
