@@ -1,0 +1,159 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root{
+    --heading-color: whitesmoke;
+    --heading-bg-color: #333;
+    --body-bg-color: #fefe;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body{
+    font: 1.5rem sans-serif;
+    min-height: 100vh;
+    background-color: var(--body-bg-color);
+    display: flex;
+    flex-flow: column nowrap;
+}
+
+header {
+    position: sticky;
+    top: 0;
+}
+section {
+    background-color: var(--heading-bg-color);
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-between;
+    align-items: center;
+}
+
+header h1 {
+    color: var(--heading-color);
+    padding: 0.5rem;
+
+}
+button {
+    width: 2.5rem;
+    height: 2.5rem;
+    border: none;
+    margin-right: .5rem;
+    background-color: transparent;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+
+.menu,.menu::before,
+.menu::after  {
+    width: 2rem;
+    height: 5px;
+    background-color: var(--heading-color);
+    border-radius: 5px;
+    position: absolute;
+    transition: all 0.5s;
+}
+
+.menu::before,
+.menu::after {
+    content: "";
+}
+
+button .menu::before {
+    transform: translateY(-12px) translateX(-16px);
+}
+
+button .menu::after {
+    transform: translateY(12px) translateX(-16px);
+}
+
+:is(header:hover, header:focus-within) .menu {
+    background-color: transparent;
+    transform: rotate(720deg);
+    transition: all .5s;
+}
+
+:is(header:hover, header:focus-within) .menu::before {
+    transform: translateX(-16px) rotate(45deg);
+    transition: all .5s;
+}
+:is(header:hover, header:focus-within) .menu::after {
+    transform: translateX(-16px) rotate(-45deg);
+    transition: all .5s;
+}
+
+nav {
+    transform-origin: top center;
+    display: none;
+    background-color: var(--heading-bg-color);
+    animation: 0.5s ease-in-out 0s alternate showMenu;
+}
+
+:is(header:focus-within, header:hover) nav{
+    display: block;
+
+
+}
+
+@keyframes showMenu {
+    0% {
+        transform: scaleY(0);
+    } 80% {
+        transform: scaleY(1.2);
+    }
+    100% {
+        transform: scaleY(1);
+    }
+}
+nav ul {
+    list-style-type: none;
+
+}
+nav li {
+    border-top: .5px solid var(--heading-color);
+    padding: 0.5rem;
+}
+
+nav a {
+    display: block;
+    text-align: center;
+    text-decoration: none;
+    font-weight: bold;
+    font-family: arial;
+    width: 80%;
+    margin: auto;
+}
+
+nav a:any-link {
+    color: var(--heading-color);
+}
+
+nav a:hover, nav a:focus {
+    transform: scale(1.2);
+    transition: all 0.3s;
+}
+main{
+    flex-grow: 1;
+    scroll-margin-top: 243.2px;
+}
+
+hr {
+    border: 5px solid blue;
+    background-color: blue;
+}
+
+footer {
+    text-align: center;
+    padding:1rem;
+    background-color: var(--heading-bg-color);
+    position: sticky;
+    bottom: 0;
+    color: var(--heading-color);
+}

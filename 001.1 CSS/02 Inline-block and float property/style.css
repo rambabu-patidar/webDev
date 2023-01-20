@@ -1,0 +1,110 @@
+/* *{
+    margin:0;
+    padding :0;
+    box-sizing: border-box;
+} */
+
+body{
+    background-color:#ffddff;
+    margin: 0.2rem;
+    font-size: 1.5rem;
+}
+
+header{
+    margin: 0 auto;
+    max-width: 700px;
+}
+
+h1{
+    padding: 1.5rem;
+    background-color: gold;
+}
+
+ul{
+    list-style-type:none;
+    background-color: cadetblue;
+    margin:0;
+    padding: 0;
+}
+
+li {
+    display:inline-block;
+}
+
+li a{
+    display: block;
+    /* background-color: aqua; */
+    padding: 0.5rem;
+    text-decoration: none;
+    color: white;
+
+}
+li a:visited{
+    color: black;
+}
+
+li a:hover,
+ li a:focus{
+    background-color: black;
+    color: white;
+}
+
+li a:active{
+    color: red;
+} 
+
+main{
+    margin-top:3rem;
+}
+
+#first p{
+    background-color: aliceblue;
+}
+
+.inline-type{
+    display: inline-block;
+    background-color:gold;
+    color: black;
+}
+.divs{
+    display:inline-block;
+    width:4rem;
+    height:4rem;
+    padding: 2rem;
+    margin: 1rem;
+    text-align:center;
+    background-color:#4eabff;
+}
+
+.divs:nth-child(odd) {
+    background-color:gold;
+}
+
+.block{
+    width: 4rem;
+    height: 4rem;
+    background-color: black;
+    color:azure;
+    padding: 2rem;
+}
+
+.float-property-left{
+    float: left;
+    margin-right: 1rem;
+}
+
+
+.clear{
+    clear:both;
+}
+
+article{
+    background-color: lightcyan;
+    /* This is not recommended now */
+    /* overflow: auto;  */
+    display:flow-root; /*this is recommended */
+}
+.float-property-right{
+    float: right;
+    margin-left: 1rem;
+}

@@ -1,0 +1,563 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="autor" content="Rambabu Patidar" />
+  <meta name="description"
+    content="This is the front page of all the tables made while learning from MDN (mozilla Developer Network)" />
+  <meta name="viewport" content="width:device-width, initial-scale:1.0" />
+  <link rel="stylesheet" href="minimal-table.css" type="text/css" />
+  <title>Tables in HTML</title>
+</head>
+
+<body>
+  <center> <!--This element is depricated and no longer in use. use CSS to ceter the elements you want. Here I used so that you can feel confortable and enjoyable in reading the page.-->
+  <header>
+    <h1>Tables in <abbr title="HyperText Markup Language">HTML</abbr></h1>
+    <p>
+      This small and simple website will contain all about the table which I
+      had made when I learned it from
+      <a href="https://developer.mozilla.org"><abbr title="Mozilla Developer Network">MDN</abbr> Documentation</a>
+    </p>
+
+    <nav>
+      <ul style="list-style-type:none">
+        <li>
+          <a href="#first-table">Build First Table</a>
+        </li>
+        <li>
+          <a href="#heading-table">Heading Table</a>
+        </li>
+        <li>
+          <a href="#expanding-tables-row-cols">Expanding Tables Rows And Columns</a>
+        </li>
+        <li>
+          <a href="#Styling-with-cols">Styling Tables slightly</a>
+        </li>
+        <li>
+          <a href="#using-semantics-in-tables">Using Semantics in Tables</a>
+        </li>
+        <li>
+          <a href="#scope-attribute">Using Scope Attribute</a>
+        </li>
+        <li>
+          <a href="#heading-of-sub-headings">Heading Of the Sub Headings</a>
+        </li>
+        <li>
+          <a href="planet-data.html"><strong>Final Assessment- Planet Data</strong></a>
+        </li>
+      </ul>
+    </nav>
+  </header>
+
+  <hr />
+
+  <main>
+    <article id="first-table">
+      <h2>This will show you how to create a simplest table in HTML.</h2>
+      <table>
+        <caption>
+          This is the simplest table you can ever create in your life if
+          needed.
+        </caption>
+        <tr>
+          <td>Hi, I am your first cell in first row</td>
+          <td>Hi, I am your second cell in first row</td>
+          <td>Hi, I am your third cell in first row</td>
+          <td>Hi, I am your fourth cell in first row</td>
+        </tr>
+        <tr>
+          <td>Hi, I am your first cell in second row</td>
+          <td>Hi, I am your second cell in second row</td>
+          <td>Hi, I am your third cell in second row</td>
+          <td>Hi, I am your fourth cell in second row</td>
+        </tr>
+        <tr>
+          <td>Hi, I am your first cell in third row</td>
+          <td>Hi, I am your second cell in third row</td>
+          <td>Hi, I am your third cell in third row</td>
+          <td>Hi, I am your fourth cell in third row</td>
+        </tr>
+      </table>
+    </article>
+    <article id="heading-table">
+      <h2>This will show you how you can use Heading in the HTML Table.</h2>
+      <section>
+        <h3>Heading in the column</h3>
+        <table>
+          <caption>
+            Column Heading in a table
+          </caption>
+          <tr>
+            <th>Name</th>
+            <th>Roll NO</th>
+            <th>Class</th>
+            <th>School</th>
+          </tr>
+          <tr>
+            <td>Rohit</td>
+            <td>34</td>
+            <td>6th</td>
+            <td>KEA</td>
+          </tr>
+          <tr>
+            <td>Ram</td>
+            <td>335</td>
+            <td>6th</td>
+            <td>JEA</td>
+          </tr>
+          <tr>
+            <td>Vaishali</td>
+            <td>35</td>
+            <td>11th</td>
+            <td>KJA</td>
+          </tr>
+          <tr>
+            <td>Deepak</td>
+            <td>35</td>
+            <td>11th</td>
+            <td>KEZ</td>
+          </tr>
+        </table>
+      </section>
+      <section>
+        <h3>Heading in the Rows</h3>
+        <table>
+          <caption>
+            Rows Heading in a table
+          </caption>
+
+          <tr>
+            <th>Student 1</th>
+            <td>Rohit</td>
+            <td>34</td>
+            <td>6th</td>
+            <td>KEA</td>
+          </tr>
+          <tr>
+            <th>Student 2</th>
+            <td>Ram</td>
+            <td>335</td>
+            <td>6th</td>
+            <td>JEA</td>
+          </tr>
+          <tr>
+            <th>Student 3</th>
+            <td>Vaishali</td>
+            <td>35</td>
+            <td>11th</td>
+            <td>KJA</td>
+          </tr>
+          <tr>
+            <th>Student 4</th>
+            <td>Deepak</td>
+            <td>35</td>
+            <td>11th</td>
+            <td>KEZ</td>
+          </tr>
+        </table>
+      </section>
+      <section>
+        <h3>Heading in the Rows and Colums</h3>
+        <table>
+          <caption>
+            Rows and Columns Heading in a table
+          </caption>
+          <tr>
+            <th>&nbsp;</th>
+            <th>Name</th>
+            <th>Roll NO</th>
+            <th>Class</th>
+            <th>School</th>
+          </tr>
+          <tr>
+            <th>Student 1</th>
+            <td>Rohit</td>
+            <td>34</td>
+            <td>6th</td>
+            <td>KEA</td>
+          </tr>
+          <tr>
+            <th>Student 2</th>
+            <td>Ram</td>
+            <td>335</td>
+            <td>6th</td>
+            <td>JEA</td>
+          </tr>
+          <tr>
+            <th>Student 3</th>
+            <td>Vaishali</td>
+            <td>35</td>
+            <td>11th</td>
+            <td>KJA</td>
+          </tr>
+          <tr>
+            <th>Student 4</th>
+            <td>Deepak</td>
+            <td>35</td>
+            <td>11th</td>
+            <td>KEZ</td>
+          </tr>
+        </table>
+      </section>
+    </article>
+    <article id="expanding-tables-row-cols">
+      <h2>Expanding the Rows and Cols</h2>
+      <p>
+        We can see that student 1 and student 2 has also their class common in
+        resepect to columns and student 3 has school that is considerd as both
+        the private and govt. so it is autonomus ,so make them one using
+        <code>rowspan</code> and <code>colspan</code> attribute.
+      </p>
+      <table>
+        <caption>
+          Rows and Columns spanning in a table
+        </caption>
+        <tr>
+          <th>&nbsp;</th>
+          <th>Name</th>
+          <th>Roll NO</th>
+          <th>Class</th>
+          <th>School</th>
+          <th>Govt.</th>
+          <th>Private</th>
+        </tr>
+        <tr>
+          <th>Student 1</th>
+          <td>Rohit</td>
+          <td>34</td>
+          <td rowspan="2">6th</td>
+          <td>KEA</td>
+          <td>Govt.</td>
+          <td>&nbsp;</td>
+        </tr>
+        <tr>
+          <th>Student 2</th>
+          <td>Ram</td>
+          <td>335</td>
+          <td>JEA</td>
+          <td>&nbsp;</td>
+          <td>private</td>
+        </tr>
+        <tr>
+          <th>Student 3</th>
+          <td>Vaishali</td>
+          <td>35</td>
+          <td>11th</td>
+          <td>KJA</td>
+          <td colspan="2">autonomus</td>
+        </tr>
+        <tr>
+          <th>Student 4</th>
+          <td>Deepak</td>
+          <td>35</td>
+          <td>11th</td>
+          <td>KEZ</td>
+          <td>&nbsp;</td>
+          <td>private</td>
+        </tr>
+      </table>
+    </article>
+    <article id="Styling-with-cols">
+      <h2>
+        Styling the table (we are not learning the CSS we just using the HTML
+        Attributes).
+      </h2>
+      <p>
+        I had tried to change the background of the columns but the css also
+        has some background property so it is not overriding that one so it
+        will not be visible so I decorated it in border wise.
+        <br />
+        Also keep in mind that the styling you can do via this are limited so
+        check the MDN Documentation for the Tables styling with
+        <code>cols</code>
+      </p>
+      <table>
+        <caption>
+          Styling the names of the student and class a Bit.
+        </caption>
+        <colgroup>
+          <col span="1" />
+          <col style="border: 4px solid tomato" />
+          <col />
+          <col style="border: 2px solid rgb(255, 0, 225)" />
+          <col span="3" />
+        </colgroup>
+        <tr>
+          <th>&nbsp;</th>
+          <th>Name</th>
+          <th>Roll NO</th>
+          <th>Class</th>
+          <th>School</th>
+          <th>Govt.</th>
+          <th>Private</th>
+        </tr>
+        <tr>
+          <th>Student 1</th>
+          <td>Rohit</td>
+          <td>34</td>
+          <td rowspan="2">6th</td>
+          <td>KEA</td>
+          <td>Govt.</td>
+          <td>&nbsp;</td>
+        </tr>
+        <tr>
+          <th>Student 2</th>
+          <td>Ram</td>
+          <td>335</td>
+          <td>JEA</td>
+          <td>&nbsp;</td>
+          <td>private</td>
+        </tr>
+        <tr>
+          <th>Student 3</th>
+          <td>Vaishali</td>
+          <td>35</td>
+          <td>11th</td>
+          <td>KJA</td>
+          <td colspan="2">autonomus</td>
+        </tr>
+        <tr>
+          <th>Student 4</th>
+          <td>Deepak</td>
+          <td>35</td>
+          <td>11th</td>
+          <td>KEZ</td>
+          <td>&nbsp;</td>
+          <td>private</td>
+        </tr>
+      </table>
+    </article>
+
+    <article id="using-semantics-in-tables">
+      <h2>Using Semantics in table to Organise it Better.</h2>
+      <p>
+        Why do we need semantics in HTML ? Think !!! see
+        <a href="https://developer.mozilla.org/">MDN</a>
+      </p>
+      <table>
+        <caption>
+          Styling the names of the student and class a Bit.
+        </caption>
+        <thead>
+          <tr>
+            <th>&nbsp;</th>
+            <th>Name</th>
+            <th>Roll NO</th>
+            <th>Class</th>
+            <th>School</th>
+            <th>Govt.</th>
+            <th>Private</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <th>Student 1</th>
+            <td>Rohit</td>
+            <td>34</td>
+            <td rowspan="2">6th</td>
+            <td>KEA</td>
+            <td>Govt.</td>
+            <td>&nbsp;</td>
+          </tr>
+          <tr>
+            <th>Student 2</th>
+            <td>Ram</td>
+            <td>335</td>
+            <td>JEA</td>
+            <td>&nbsp;</td>
+            <td>private</td>
+          </tr>
+          <tr>
+            <th>Student 3</th>
+            <td>Vaishali</td>
+            <td>35</td>
+            <td>11th</td>
+            <td>KJA</td>
+            <td colspan="2">autonomus</td>
+          </tr>
+          <tr>
+            <th>Student 4</th>
+            <td>Deepak</td>
+            <td>35</td>
+            <td>11th</td>
+            <td>KEZ</td>
+            <td>&nbsp;</td>
+            <td>private</td>
+          </tr>
+        </tbody>
+        <tfoot>
+          <tr>
+            <th colspan="7">Total 4 students</th>
+          </tr>
+        </tfoot>
+      </table>
+    </article>
+    <article id="scope-attribute">
+      <h2>Using scope attribute</h2>
+      <p>
+        as such it does not have any impact in the visuals of the tables but
+        the advantages are is that when the assistive technologies are reading
+        the table they can make decision in which row or col it has to move
+        from reading heading in order to read a col/row only from whole data
+        of the table.
+      </p>
+
+      <table>
+        <caption>
+          Styling the names of the student and class a Bit.
+        </caption>
+        <thead>
+          <tr>
+            <th>&nbsp;</th>
+            <th scope="col">Name</th>
+            <th scope="col">Roll NO</th>
+            <th scope="col">Class</th>
+            <th scope="col">School</th>
+            <th scope="col">Govt.</th>
+            <th scope="col">Private</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <th scope="row">Student 1</th>
+            <td>Rohit</td>
+            <td>34</td>
+            <td rowspan="2">6th</td>
+            <td>KEA</td>
+            <td>Govt.</td>
+            <td>&nbsp;</td>
+          </tr>
+          <tr>
+            <th scope="row">Student 2</th>
+            <td>Ram</td>
+            <td>335</td>
+            <td>JEA</td>
+            <td>&nbsp;</td>
+            <td>private</td>
+          </tr>
+          <tr>
+            <th scope="row">Student 3</th>
+            <td>Vaishali</td>
+            <td>35</td>
+            <td>11th</td>
+            <td>KJA</td>
+            <td colspan="2">autonomus</td>
+          </tr>
+          <tr>
+            <th scope="row">Student 4</th>
+            <td>Deepak</td>
+            <td>35</td>
+            <td>11th</td>
+            <td>KEZ</td>
+            <td>&nbsp;</td>
+            <td>private</td>
+          </tr>
+        </tbody>
+        <tfoot>
+          <tr>
+            <th scope="row" colspan="7">Total 4 students</th>
+          </tr>
+        </tfoot>
+      </table>
+    </article>
+
+    <article id="heading-of-sub-headings">
+      <h2>Heading of the Subheadings</h2>
+      <p>
+        We can notice in our table that the heading in the first row private
+        and govt. can be a subheading of the type of school and remaining all
+        the heading like name, rollno, class are personal information of the
+        student.
+        <br />
+        So let's see the below table. Also Note that it is very bad to pollute
+        your HTML with inline CSS or Javascript. Here I am using it only for
+        the purpose of demostrating.
+      </p>
+      <p>
+        If You could make this table on your own in one go You are really
+        moving ahead with great approach move on and so I.
+      </p>
+      <table>
+        <caption>
+          Styling the names of the student and class a Bit.
+        </caption>
+        <thead>
+          <tr>
+            <th>&nbsp;</th>
+            <th>&nbsp;</th>
+            <th colspan="4" scope="colgroup" style="font-size: larger">
+              Personal Information
+            </th>
+            <th colspan="2" scope="colgroup" style="font-size: larger">
+              Type Of School
+            </th>
+          </tr>
+          <tr>
+            <th>&nbsp;</th>
+            <th>&nbsp;</th>
+            <th scope="col">Name</th>
+            <th scope="col">Roll NO</th>
+            <th scope="col">Class</th>
+            <th scope="col">School</th>
+            <th scope="col">Govt.</th>
+            <th scope="col">Private</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <th rowspan="4" scope="rowgroup" style="font-size: larger">
+              Students
+            </th>
+            <th scope="row">Student 1</th>
+            <td>Rohit</td>
+            <td>34</td>
+            <td rowspan="2">6th</td>
+            <td>KEA</td>
+            <td>Govt.</td>
+            <td>&nbsp;</td>
+          </tr>
+          <tr>
+            <th scope="row">Student 2</th>
+            <td>Ram</td>
+            <td>335</td>
+            <td>JEA</td>
+            <td>&nbsp;</td>
+            <td>private</td>
+          </tr>
+          <tr>
+            <th scope="row">Student 3</th>
+            <td>Vaishali</td>
+            <td>35</td>
+            <td>11th</td>
+            <td>KJA</td>
+            <td colspan="2">autonomus</td>
+          </tr>
+          <tr>
+            <th scope="row">Student 4</th>
+            <td>Deepak</td>
+            <td>35</td>
+            <td>11th</td>
+            <td>KEZ</td>
+            <td>&nbsp;</td>
+            <td>private</td>
+          </tr>
+        </tbody>
+        <tfoot>
+          <tr>
+            <th scope="row" colspan="8">Total 4 students</th>
+          </tr>
+        </tfoot>
+      </table>
+    </article>
+  </main>
+  <hr>
+  <footer>
+    <p><a href="#">Back to Top</a></p>
+    <p>Copyright &copy; <strong>Rambabu Patidar</strong> &nbsp;&nbsp; All right reserved. </p>
+  </footer>
+</center>
+</body>
+
+</html>

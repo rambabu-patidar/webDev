@@ -1,0 +1,84 @@
+@import url('https://fonts.googleapis.com/css2?family=Barlow&display=swap');
+
+*{
+    margin : 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font: 2rem 'Barlow', sans-serif;
+    min-height: 100vh;
+
+    background-color:aliceblue;
+    background-image:radial-gradient(aliceblue, rgba(0, 149, 255, 0.666));
+
+    display:flex;
+    flex-direction: column;
+}
+
+header, nav, main, footer{
+    display: grid;
+    justify-content: center;
+    align-items: center;
+    grid-auto-columns:100%;
+    text-align:center;
+}
+
+header, footer{
+    background-color: gold;
+    position: sticky;
+}
+
+h1{
+    border-bottom: 2px solid #fff;
+}
+
+nav{
+    background-color: #005;
+    color: aliceblue;
+}
+
+header{
+    top: 0;
+}
+footer{
+    bottom: 0;
+}
+
+main{
+    flex-grow: 1;
+}
+
+@media screen and (min-width: 576px) {
+     body{
+        background-color:thistle;
+        background-image:linear-gradient(thistle, aliceblue);
+     }
+     header, footer{
+        background-color: rgba(0, 149, 255, 0.934);
+     }
+     nav{
+        background-color: rgb(75, 250, 192);
+     }
+}
+
+@media screen and (min-width:768px) {
+    body{
+        background-color:azure;
+        background-image: radial-gradient(azure, rgb(133, 240, 168))
+    }
+    nav{
+        display:none;
+    }
+}
+
+@media screen and (max-height:425px) and (min-aspect-ratio: 7 / 4) {
+    body{
+        background-color:violet;
+        background-image:url(../Images-in-css/images/bubbles.png), radial-gradient(violet, blue);
+    }
+    nav{
+        display:none;
+    }
+}

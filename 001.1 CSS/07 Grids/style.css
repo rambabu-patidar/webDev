@@ -1,0 +1,112 @@
+@import url('https://fonts.googleapis.com/css2?family=Barlow&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing:border-box;
+}
+
+body{
+    font-size:2rem;
+    font-family: 'Barlow', sans-serif;
+
+    display: grid;
+    grid-template-columns:repeat(9, 1fr);
+    grid-auto-rows:50px auto 50px;
+    /*if you don't like the this short way you can provide each container it's starting ending row and columns like the first two lines of the header footer aside and main below */
+    grid-template-areas: 
+    "hd hd hd hd hd hd hd hd hd"
+    "mn mn mn mn mn mn mn ac ac"
+    "ft ft ft ft ft ft ft ft ft";
+    gap: 1.1rem 0.5rem;
+}
+
+.el{
+    display: grid;
+    justify-content:center;
+    align-items:center;
+}
+
+.header{
+    /* grid-column: 1 / 10;
+    grid-row: 1 / 2; */
+    grid-area: hd;
+    background-color: tomato;
+}
+
+.sidebar{
+    /* grid-row: 2 / 3;
+    grid-column:8 / 10; */
+    grid-area: ac;
+    background-color: #f0afaf;
+}
+
+.footer{
+    /* grid-row:3 / 4;
+    grid-column:1 / 10; */
+    grid-area: ft;
+    background-color: #aa5500;
+}
+.outer-container{
+    /* grid-row: 2 / 3;
+    grid-column:1 / 8; */
+    grid-area: mn;
+    /* height: 100vh; */
+    border:1px solid black;
+    display: grid;
+    grid-template-columns:repeat(2, 1fr 2fr);
+    grid-auto-rows:minmax(150px, 200px);
+    gap: 1rem;
+}
+
+/*this will not change the first red box item position becase of the specificity .box has 10 as it is class and .box:first-child will have 20 as two classes .box and pseudo class first-child.
+
+now think how to increase the specificity of the .box class.
+Think!
+
+I might say
+we can easily do with putting .outer-cotainer as this .box container is inside the .outer-container class container.
+but again the specificity will be 20 and the cascade will be applied of the later one (as it scan from top to bottom)
+
+Think!!! 
+One more think I can do is that I put body element in front of what previsously we thought of 
+something like {body .outer-container .box} this will make its specificity 21 and that is greater than 20. Wowww its done congrates Rambabu Patidar.
+
+*/
+
+body .outer-container .box{
+    padding: 1rem;
+    display: grid;
+    place-content: center center;
+}
+.box:first-child{
+   grid-column: 1 / 4;
+    grid-row: 1 / 3;
+    display:grid;
+    /*
+    align-items:center; justify-content:center; */
+    place-content: end right;
+}
+
+.box:nth-child(3){
+    grid-column: 4 / 5;
+    grid-row: 2 / 4;
+}
+.first{
+    background-color:#f00;
+}
+.second{
+    background-color:#0f0;
+}
+.third{
+    background-color:#f0f;
+}
+.fourth{
+    background-color:#00f;
+}
+.fifth{
+    background-color:#ff0;
+}
+.sixth{
+    background-color:#0ff;
+}

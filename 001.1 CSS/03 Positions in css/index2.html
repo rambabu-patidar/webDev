@@ -1,0 +1,187 @@
+<!-- this I had learned when I revisited this course -->
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Position</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-size: 1.5rem;
+    font-family: "Roboto", sans-serif;
+    height: 200vh;
+}
+
+/* .outer-container{
+    width: 80%;
+    margin: 3rem auto;
+    height: 80vh;
+    border: 3px dashed black;
+}
+
+.inner-container{
+    width: 50%;
+    margin: 4rem auto;
+    height: 60vh;
+    border: 2px solid black;
+    position: relative;
+}
+
+.box{
+    color: white;
+    width: 150px;
+    height: 150px;
+    padding: 1rem;
+}
+
+.absolute{
+    background-color: #f00;
+    position: absolute;
+    top: -100px;
+    left: -100px;
+}
+
+.relative{
+    background-color: #00f;
+    position: relative;
+    top: 100px;
+    left: 200px;
+}
+
+.fixed{
+    background-color: darkgoldenrod;
+    position: fixed;
+    top: 100px;
+    left: 0px;
+}
+
+.sticky{
+    background-color: #000;
+    position: sticky;
+    top: 0;
+} */
+
+html{
+    scroll-behavior: smooth;
+}
+
+section{
+    height: 100vh;
+}
+
+.social{
+    font-size: 3rem;
+    padding: 0.5rem 0.5rem 0.5rem 0;
+    background: #000;
+    position: fixed;
+    top: 30%;
+    left: 0;
+    z-index: 1;
+    border-radius: 0 20px 20px 0;
+}
+h1{
+    font-size: 3rem;
+    text-align: center;
+    background-color: gold;
+    padding: 1rem;
+    position: sticky;
+    top: 0;
+}
+
+section p{
+    padding: 2rem;
+}
+
+footer{
+    background-color: royalblue;
+    padding: 1rem;
+    text-align: center;
+    position: sticky;
+    bottom: 0;
+}
+footer a{
+    color: whitesmoke;
+    padding: 1rem;
+}
+
+.back-to-top{
+    font-size: 2rem;
+    background-color: crimson;
+    border-radius: 50%;
+    position: fixed;
+    bottom: 10px;
+    right: 10px;
+}
+.back-to-top a{
+    color: #fff;
+    padding: 0.5rem;
+    text-decoration: none;
+}
+    </style>
+</head>
+<body>
+    <!-- 
+    <div class="outer-container">
+        <div class="inner-container">
+            <div class="box absolute">Absolute</div>
+            <div class="box relative">Relative</div>
+            <div class="box fixed">Fixed</div>
+            <div class="box sticky">Sticky</div>
+        </div>
+    </div> -->
+
+    <div class="social">🚀</div>
+    <main>
+        <section id="first">
+            <h1>First</h1>
+            <p>This is the first para</p>
+        </section>
+        <section id="second">
+            <h1>Second</h1>
+            <p>This is the second para</p>
+        </section>
+        <section id="third">
+            <h1 >Third</h1>
+            <p>This is the third para</p>
+        </section>
+        <section>
+            <h1>heading</h1>
+            <p>this are the paragraph</p>
+        </section>
+        <section>
+            <h1>heading</h1>
+            <p>this are the paragraph</p>
+        </section>
+        <section>
+            <h1>heading</h1>
+            <p>this are the paragraph</p>
+        </section>
+        <section>
+            <h1>heading</h1>
+            <p>this are the paragraph</p>
+        </section>
+        <section>
+            <h1>heading</h1>
+            <p>this are the paragraph</p>
+        </section>
+    </main>
+    <footer>
+        <a href="#first">First</a> |
+        <a href="#second">Second</a> |
+        <a href="#third">Third</a>
+    </footer>
+    <div class="back-to-top"><a href="#top">▲</a></div>
+</body>
+</html>

@@ -1,0 +1,124 @@
+@import url('https://fonts.googleapis.com/css2?family=Barlow&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing:border-box;
+}
+
+img{
+    display: block;
+}
+
+.nowrap{
+    white-space:nowrap;
+}
+
+body{
+    font-size:1rem;
+    font-family: 'Barlow' , sans-serif;
+    min-height:100vh;
+    background-color: azure;;
+    /* background-image:url(images/bubbles.png), linear-gradient(to left, gold,aliceblue);
+    background-repeat:repeat-y, no-repeat;
+    background-position:right;
+    background-size: 25%, auto; */
+}
+
+.clip{
+    font-weight:1000;
+    font-size:22rem;
+    text-align:center;
+    background-image:url("images/date-trees.jpg");
+    background-size: 100%;
+    -webkit-background-clip: text;
+    background-clip: text;
+    color:transparent;
+    background-position: center;
+}
+
+.layering{
+    background-color: hsl(221, 77%, 81%);
+    background-image:url("images/waterfall.jpg");
+    background-size:cover;
+    background-position: top left;
+
+
+}
+
+.outer-container{
+    border-bottom: 2px solid #000;
+    padding: 1.1rem;
+    display:flex;
+    justify-content:flex-start;
+    align-items: center;
+    gap: 2rem;
+    /*fall back in case our image fails to load*/
+    background-color: rgba(255, 255, 255, 0.2);
+
+}
+
+@media (max-width:520px) {
+    .outer-container .name-greeting{
+        font-size:300%;
+    }
+}
+
+@media (max-width:400px) {
+    .outer-container .name-greeting{
+        font-size: 2rem;
+    }
+}
+@media (max-width: 350px){
+    .outer-container {
+        flex-direction:column;
+        justify-content:center;
+        align-items:center;
+    }
+}
+
+.figure{
+    width: 40%;
+}
+
+.figure img{
+    width: 100%;
+    min-width: 150px;
+    height: auto;
+    border: 3px solid rgba(255, 255, 255, 0.207);
+    border-radius: 50%;
+}
+
+
+.name-greeting{
+    font-weight: 900;
+    font-size:500%;
+    color:aliceblue;
+    text-shadow: 2px 2px 5px #000;
+    padding: 1rem;
+    border-radius: 10px;
+}
+
+.remove-element{
+    color: #fff;
+    position: absolute;
+    left:-10000px;
+}
+/* this is the first basic example that how to make the image responsive and how the little space between the border and the image can be adjusted. And that comes due to the fact that the inline element are treated as character and the space is due to the orientations of the character in languages like 'y' 'p' has their tails below the sitting line of char. see stackoverflow has a good section there */
+/* 
+.container{
+    margin: 1rem;
+}
+
+.celebration{
+    border: 1px solid #000;
+    width: 100%;
+}
+
+.celebration img{
+    display:block;
+    width: 50%;
+    height: auto;
+    min-width: 100px;
+} 
+*/

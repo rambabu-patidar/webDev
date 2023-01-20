@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="author" content="Rambabu Patidar">
+    <meta name="description" content="This is a page for Video in HTML ">
+    <title>Video Page</title>
+    <style>
+        body,
+        header,
+        main,
+        footer {
+            width: 60%;
+            margin: auto;
+        }
+
+        body {
+            border: 1px solid #eee;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+    </style>
+</head>
+
+<body>
+
+    <header>
+        <h1>This is the Video Page</h1>
+        <nav>
+            <ul>
+                <li>
+                    <a href="index.html">Home</a>
+                </li>
+                <li>
+                    <a href="audio.html">Audio Page</a>
+                </li>
+                <li>
+                    <a href="image.html">Image Section</a>
+                </li>
+            </ul>
+        </nav>
+    </header>
+    <hr>
+    <main>
+        <section id="aboutSection">
+            <h2>About the Page</h2>
+            <p>This Page will walk through you to show that how we can embed the Videos in the web pages and I will try
+                to give the description of some of the element and Attribute of video element.
+            </p>
+        </section>
+
+        <section id="element-attribute-used">
+            <h2>Element and Attribute Used</h2>
+            <p> Description of list of all the element and attributes and why we are using them </p>
+
+            <section>
+                <h3>Elements</h3>
+                <dl>
+                    <dt><code>&lt;video&gt;</code></dt>
+                    <dd>This is the most basic element for emebeding the video in to the web pages </dd>
+                    <dt><code>&lt;figure&gt;</code></dt>
+                    <dd>This is a block level element used to put the images/audios/or other type and we can provide a
+                        specific caption to
+                        this vidoe using another element used inside the <code>&lt;figure&gt;</code> element is
+                        <code>&lt;figurecaption&gt;</code>
+                    </dd>
+
+                    <dt><code>&lt;figurecaption&gt;</code></dt>
+                    <dd>This element is used to provide the caption for the anything. <blockquote
+                            cite="https://developer.mozilla.org/"> <cite><strong> <a
+                                        href="https://developer.mozilla.org/">Mozilla
+                                        Documentation</a></strong> says that the <code>&lt;figurecaption&gt;</code>
+                                element
+                                can be
+                                used to wrap any kind of emotion or text or code in which we want to bind the
+                                caption/title with
+                                it.</cite>
+                        </blockquote>
+                    </dd>
+
+                </dl>
+            </section>
+            <section>
+                <h3>Attribute</h3>
+                <dl>
+                    <dt><code>&lt;src&gt;</code></dt>
+                    <dd>This will provide the source for the Video. where to look&quest;</dd>
+                    <dt><code>&lt;controls&gt;</code></dt>
+                    <dd>This will provide the controls for the Video</dd>
+                    <dt><code>&lt;loop&gt;</code></dt>
+                    <dd>once the Video is completed wether we want to repeate it or not.</dd>
+                    <dt><code>&lt;muted&gt;</code></dt>
+                    <dd>The Video sound by default will be muted.</dd>
+                    <dt><code>&lt;autoplay&gt;</code></dt>
+                    <dd>once we clicked the page and Video will start to play without our permission.</dd>
+                    <dt><code>&LT;title&GT;</code></dt>
+                    <dd>This will provide title to the image when we hover over the image we see it .</dd>
+                    <dt><code>&LT;preload&GT;</code></dt>
+                    <dd>This will make sure that the video will be preloaded before playing or once we are in the
+                        website.</dd>
+                    <dt><code>&LT;width&GT;</code></dt>
+                    <dd>This is the width of the video we want to be in our page</dd>
+                    <dt><code>&LT;height&GT;</code></dt>
+                    <dd>This is the width of the video we want to be in our page</dd>
+                    <dt><code>&LT;poster&GT;</code></dt>
+                    <dd>This is the poster or the thumbnail of the video that we will see when we see the video and it's
+                        not started yet.</dd>
+                </dl>
+                <p><q cite="https://developer.mozilla.org/">If you choose <code>&lt;autoplay&gt;</code> attribute then
+                        you will not able to see the poster of the video because as soon as we will be inside the page
+                        it start playing.</q>-- <cite> <a href="https://developer.mozilla.org/">Mozilla
+                            Documentation</a></cite>.</p>
+                <p>And there are many more but this much of elements ans attribute will work for now.
+
+                </p>
+            </section>
+
+        </section>
+        <article>
+            <h2>Implementing this on video:</h2>
+            <p>Now let's look at the practicle hand on on this element and attributes</p>
+
+            <section>
+                <h3>Video in <abbr title="HyperText Markup Language">HTML</abbr></h3>
+
+                <figure>
+                    
+                    <video src="https://www.pexels.com/video/time-lapse-video-of-a-clock-working-backwards-7346134/" title="This is an example Video" loop controls preload="auto" muted
+                        width="352" height="264" poster="./asset/timePoster.jpg"></video>
+                    <figcaption>Time Video by <a href="https://pixabay.com/">Pixabay</a></figcaption>
+                </figure>
+            </section>
+        </article>
+    </main>
+    <hr>
+    <footer>
+
+        <p>Ok hope you enjoy our mini website</p>
+        <p>Copyright &copy; The <strong><em>Rambabu's</em></strong> Mini Website, <i> <a href="https://example.com/">All
+                    right Reserved</a> <time datetime="2022">2022</time></i></p>
+
+    </footer>
+</body>
+
+</html>

@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="author" content="Rambabu Patidar">
+    <meta name="description" content="This is a Home page for content">
+    <title>Image Page</title>
+    <style>
+        body,
+        header,
+        main,
+        footer {
+            width: 60%;
+            margin: auto;
+        }
+        body{
+            border: 1px solid #eee;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+    </style>
+</head>
+
+<body>
+
+    <header>
+        <h1><code>&lt;img&gt;</code> Element in <abbr title="HyperText Markup Language">HTML</abbr>
+        </h1>
+        <nav>
+            <ul>
+                <li>
+                    <a href="index.html">Home</a>
+                </li>
+                <li>
+                    <a href="video.html">Video Section</a>
+                </li>
+                <li>
+                    <a href="audio.html">Audio Section</a>
+                </li>
+            </ul>
+        </nav>
+    </header>
+    <hr>
+    <main>
+        <section id="aboutSection">
+            <h2>About the Page</h2>
+            <p>
+                This Page of the website shows you that how the images are embeded in to the web pages and what are the
+                different techniques we should use while embeding and image in <abbr
+                    title="Hypertext markup language">HTML</abbr>
+            </p>
+        </section>
+        <section id="element-attribute-used">
+            <h2>Element and Attribute Used</h2>
+            <p> Description of list of all the element and attributes and why we are using them </p>
+
+            <section>
+                <h3>Elements</h3>
+                <dl>
+                    <dt><code>&lt;img&gt;</code></dt>
+                    <dd>This is the most basic element for emebeding the images in to the web pages </dd>
+                    <dt><code>&lt;figure&gt;</code></dt>
+                    <dd>This is a block level element used to put the images and we can provide a specific caption to
+                        this image using another element used inside the <code>&lt;figure&gt;</code> element is
+                        <code>&lt;figurecaption&gt;</code>
+                    </dd>
+
+                    <dt><code>&lt;figurecaption&gt;</code></dt>
+                    <dd>This element is used to provide the caption for the images. <blockquote
+                            cite="https://developer.mozilla.org/"> <cite><strong> <a
+                                href="https://developer.mozilla.org/">Mozilla
+                                Documentation</a></strong> says that the <code>&lt;figurecaption&gt;</code> element
+                            can be
+                            used to wrap any kind of emotion or text or code in which we want to bind the caption with
+                            it.</cite>
+                        </blockquote>
+                    </dd>
+
+                </dl>
+            </section>
+            <section>
+                <h3>Attribute</h3>
+                <dl>
+                    <dt><code>&lt;src&gt;</code></dt>
+                    <dd>This will provide the source for the image. where to look.</dd>
+                    <dt><code>&lt;alt&gt;</code></dt>
+                    <dd>This will provide alternate text for the image if failde to load by any reasons</dd>
+                    <dt><code>&lt;width&gt;</code></dt>
+                    <dd>This will provide initial width to the image we have provided.</dd>
+                    <dt><code>&lt;height&gt;</code></dt>
+                    <dd>This will provide initial height of the imgae we have provided.</dd>
+                    <dt><code>&lt;loading&gt;</code></dt>
+                    <dd>This will only load the images when we are near the imgae otherwise it will not until it.</dd>
+                    <dt><code>&LT;title&GT;</code></dt>
+                    <dd>This will provide title to the image when we hover over the image we see it .</dd>
+                </dl>
+                <p>And there are many more but this much of elements ans attribute will work for now.
+                    some others are like <code>&lt;ismap&gt;</code>
+                </p>
+            </section>
+
+        </section>
+
+        <article>
+            <h2>Implementing this on Image:</h2>
+            <p>Now let's look at the practicle hand on on this element and attributes</p>
+
+            <section>
+                <h3>Image in <abbr title="HyperText Markup Language">HTML</abbr></h3>
+
+                <figure>
+                    <map name="mountainMap">
+                        <area shape="rect" coords="0,0,250,158" href="https://example.com/" alt="This is left mountain link in Image" title="Know about left mountain">
+                        <area shape="rect" coords="250,0,500,158" href="https://example.com" alt="This is right mountain link in Image" title="Know about right Mountain">
+                    </map>
+                    <img src="./asset/image.jpg" alt="This is an mountain image with lake in front and person is sitting and enjoying the view" width="352" height="220" title="This is a mountain image" loading="lazy" usemap="#mountainMap">
+                    <figcaption>Moutain beside a beautiful Lake</figcaption>
+                    <p><i>Try hover on the left mountain and right mountain and to the person.</i></p>
+                </figure>
+            </section>
+        </article>
+    </main>
+    <hr>
+    <footer>
+
+        <p>Ok hope you enjoy our mini website</p>
+        <p>Copyright &copy; The <strong><em>Rambabu's</em></strong> Mini Website, <i> <a href="https://example.com/">All
+                    right Reserved</a> <time datetime="2022">2022</time></i></p>
+
+    </footer>
+</body>
+
+</html>

@@ -1,0 +1,97 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+
+/* || CSS RESET */
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+img{
+    vertical-align: bottom;
+}
+
+/* || VARIABLES */
+/* we put all the variable inside the root selector because the scope of the 
+root selector is global and can be used in any other selector.*/
+:root{
+    /* || GENERAL STYLE VARIABLES */
+    --MARGIN: 2rem;
+    --PADDING: 1rem;
+    --FF: "Roboto", sans-serif;
+    --FONT: 1.5rem var(--FF);
+    --BORDER: 2px solid #000;
+
+    /* || COLOR STYLES VARIABLES */
+    --BG-COLOR: #a8a8a8;
+    --HEADING-COLOR: rgb(40, 52, 63);
+    --RADIAL-COLOR: rgba(255, 217, 0, 0.626);
+    --SQUARE-BG-COLOR: rgb(69, 158, 164);
+    --FONT-COLOR: rgb(23, 20, 20);
+    --HEADING-BG-COLOR: #FEFECC;
+}
+
+@media (prefers-color-scheme: dark) {
+    header, footer{
+        --HEADING-COLOR: #f00;
+        --HEADING-BG-COLOR: #f0F;
+    }
+
+}
+
+body{
+    font: var(--FONT);
+    min-height: 100vh;
+
+    display: flex;
+    flex-direction: column;
+}
+
+header, footer{
+    position: sticky;
+
+    background-color:var(--HEADING-BG-COLOR);
+    color: var(--HEADING-COLOR);
+    text-align: center;
+}
+
+header{
+    top: 0;
+}
+
+nav{
+    background-color: var(--BG-COLOR);
+    color: var(--FONT-COLOR);
+}
+
+main{
+    padding: var(--PADDING) 0;
+    flex-grow: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-flow: row wrap;
+    background-image: repeating-radial-gradient(var(--RADIAL-COLOR), var(--HEADING-COLOR));
+    gap: 2rem;
+}
+
+.special-square{
+    --SQUARE-BG-COLOR: rgb(74, 70, 187);
+    --BORDER: 4px solid rgb(220, 28, 217);
+}
+
+.square{
+    width: 150px;
+    height: 150px;
+    border: var(--BORDER);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 3rem;
+    border-radius: 15px;
+    background-color: var(--SQUARE-BG-COLOR);
+}
+
+footer{
+    bottom: 0;
+}

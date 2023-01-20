@@ -1,0 +1,247 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta name="autor" content="Rambabu Patidar">
+    <meta name="description" content="This is a Html file">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>First HTML Page</title>
+    <meta charset="UTF-8">
+    <style>
+        /* body is here a selector.*/
+        body {
+            background-color: rgb(0, 0, 0);
+            color: white;
+        }
+
+        table,
+        th,
+        tr,
+        td,
+        caption {
+            border: 1px solid #eee;
+            border-collapse: collapse;
+            font-family: 'Courier New', Courier, monospace;
+            padding: 0.5rem;
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <h1>Rambabu Patidar website</h1>
+        <nav aria-label="primary-navigation">
+            <h2>First Navigation Bar</h2>
+            <ul>
+                <li><a href="#learn-html">Learn <abbr title="HyperText Markup Language">HTML</abbr></a></li>
+                <li><a href="#my-schedule">My Schedule</a></li>
+                <li><a href="#contact-me">Contact Me</a></li>
+            </ul>
+        </nav>
+    </header>
+    <hr>
+    <main>
+        <article id="learn-html">
+            <h2>Learn The HTML5</h2>
+            <p>I am learning HTML as a primary language</p>
+            <section>
+                <h3>RoadMap I am following is the Comclassroom one</h3>
+                <figure>
+                    <img src="download.png" alt="logo" width="500" height="300" loading="lazy" title="THis is and logo">
+                    <figcaption>This is an Image of Github Logo </figcaption>
+                </figure>
+            </section>
+            <aside>
+                <details>
+                    <summary>this is the thing I wanna do</summary>
+                    <p>yes this is what I wanna perfrom.</p>       
+                </details> 
+            </aside>
+        </article>
+        <hr>
+        <article id="my-schedule">
+            <h2>My Schedule</h2>
+            <p>This is the portion which describe my schedule</p>
+            <table>
+                <caption>My daily schedule</caption>
+                <!-- Col Group concept is not taught by Dave Gray I had included it when learned from MDN-->
+                <colgroup>
+                    <col span="2"> <!--This is for the first two columns-->
+                    <col style="background-color:tomato">
+                </colgroup>
+                <thead>
+                    <tr>
+                        <th>&nbsp;</th>
+                        <th scope="col">Time</th>
+                        <th scope="col">Activity</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <th scope="row">Morning</th>
+                        <td><time datetime="08:00">8am</time>-<time datetime="11:00">11am</time></td>
+                        <td>Write Code</td>
+                    </tr>
+                    <tr>
+                        <th scope="row">Lunch</th>
+                        <td><time datetime="11:00">11am</time>-<time datetime="12:00">12am</time></td>
+                        <td>Eat Lunch</td>
+                    </tr>
+                    <tr>
+                        <th scope="row">Afternoon</th>
+                        <td><time datetime="12:00">12pm</time>-<time datetime="17:00">5pm</time></td>
+                        <td>Study Other Courses</td>
+                    </tr>
+                    <tr>
+                        <th scope="row">Evening</th>
+                        <td rowspan="2">All Other Time</td>
+                        <td>Free Time</td>
+                    </tr>
+                    <tr>
+                        <th scope="row">Night</th>
+                        <td>Sleep!</td>
+                    </tr>
+
+                </tbody>
+                <tfoot>
+                    <tr>
+                        <td colspan="3">This is what I do in a week of 5 days just eat, code, sleep and repeat!</td>
+                    </tr>
+                </tfoot>
+            </table>
+        </article>
+        <hr>
+        <article id="contact-me">
+            <h2>Contact Me</h2>
+            <p>Here You can connect with me.</p>
+            <section>
+                <h3>Form</h3>
+                <p>I wish to hear from you</p>
+
+                <form action="https://httpbin.org/get" method="get">
+                    <fieldset>
+                        <legend>Details</legend>
+                        <fieldset>
+                            <legend>Personal Details</legend>
+                            <p>
+                                <label for="firstName">First Name:</label>
+                                <input type="text" name="firstName" id="firstName" placeholder="Name Here..."
+                                    required autofocus autocomplete="on">
+                            </p>
+                            <p>
+                                <label for="lastName">Last Name:</label>
+                                <input type="text" name="lastName" id="lastName" placeholder="Last Name Here..."
+                                    required autocomplete="on">
+                            </p>
+                            <p>
+                                <label for="password">Secret Key:</label>
+                                <input type="password" name="password" id="password" required
+                                    placeholder="Choose Strong Password">
+                            </p>
+                            <p>
+                                <label for="phone">Phone:</label>
+                                <input type="tel" name="phone" id="phone" required pattern="[0-9]{3}[0-9]{3}[0-9]{4}"
+                                    placeholder="5555555555" autocomplete="on">
+                            </p>
+                            <p>
+                                <label for="email">Email:</label>
+                                <input type="email" name="email" id="email" placeholder="dave@gmail.com" required
+                                    autocomplete="on">
+                            </p>
+                            <p>
+                                <label for="primeNumber">Choose Favourite Prime Number:</label>
+                                <input type="number" name="primeNumber" id="primeNumber" placeholder="Prime" required
+                                    autocomplete="on" max="100" min="0" step="1" value="50" readonly>
+                            </p>
+
+                        </fieldset>
+                        <br>
+                        <fieldset>
+                            <legend>Favourite Foods</legend>
+                            <p>
+                                <label for="dish">Favourite Dish:</label>
+                                <select name="food" id="dish" multiple size="3">
+                                    <optgroup label="Spicy Dishes">
+                                        <option value="dal bati">MP Royal Dal Bati</option>
+                                        <option value="gulab jamun with bafla" selected>Gulab Jamun With Dal Bafla
+                                        </option>
+                                        <option value="barfi panir puri">Barfi Panir Puri</option>
+                                    </optgroup>
+                                    <optgroup label="Milk Dishes">
+                                        <option value="khir puri">Almond Cashew Khir Puri</option>
+                                        <option value="panir tikka">Panir Tikka</option>
+                                    </optgroup>
+                                    <option value="other">Other</option>
+                                </select>
+                            </p>
+                        </fieldset>
+                        <br>
+                        <fieldset>
+                            <legend>Favourite Chai</legend>
+                            <p>
+                                <input type="radio" name="chai" id="normalChai" value="Normal Chai">
+                                <label for="normalChai">Normal Chai</label>
+                            </p>
+                            <p>
+                                <input type="radio" name="chai" id="masalaChai" value="masala Chai">
+                                <label for="masalaChai">Masala Chai</label>
+                            </p>
+                            <p>
+                                <input type="radio" name="chai" id="iceChai" value="ice Chai">
+                                <label for="iceChai">Ice Chai</label>
+                            </p>
+                            <p>
+                                <input type="radio" name="chai" id="greenChai" value="green Chai">
+                                <label for="greenChai">Green Chai</label>
+                            </p>
+                            <p>
+                                <input type="radio" name="chai" id="otherChai" value="Other">
+                                <label for="otherChai">Other</label>
+                            </p>
+                        </fieldset>
+                        <br>
+                        <fieldset>
+                            <legend>Favourite Cities</legend>
+                            <p>
+                                <input type="checkbox" name="cities" id="indore" value="Indore">
+                                <label for="indore">Indore</label>
+                            </p>
+                            <p>
+                                <input type="checkbox" name="cities" id="ujjain" value="Ujjain">
+                                <label for="ujjain">Ujjain</label>
+                            </p>
+                            <p>
+                                <input type="checkbox" name="cities" id="bhopal" value="Bhopal">
+                                <label for="bhopal">Bhopal</label>
+                            </p>
+                            <p>
+                                <input type="checkbox" name="cities" id="vrindavan" value="Vrindavan">
+                                <label for="vrindavan">Vrindavan</label>
+                            </p>
+                            <p>
+                                <input type="checkbox" name="cities" id="otherCities" value="Other">
+                                <label for="otherCities">Other</label>
+                            </p>
+
+                        </fieldset> 
+                        <button formaction="https://httpbin.org/post" formmethod="post">Post</button>
+                        <button type="submit">Submit</button>
+                        <button type="reset">Reset</button>
+                    </fieldset>
+                </form>
+            </section>
+        </article>
+    </main>
+    <hr>
+    <footer>
+        <nav aria-label="secondary-navigation">
+            <h2>Second Navigation Bar</h2>
+            <ul>
+                <li><a href="#">Guidlines</a></li>
+                <li><a href="#">privacy policy</a></li>
+            </ul>
+        </nav>
+    </footer>
+</body>
+
+</html>

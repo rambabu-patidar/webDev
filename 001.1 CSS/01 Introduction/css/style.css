@@ -1,0 +1,12 @@
+p {
+    color: blue;
+    font-size: 64px; /*
+   |_______________|
+          |           
+        declaration / rule/ ruleset 
+
+        p is a selector 
+        font-size is a property
+        64px is a value corresponding to the property.
+*/
+}
