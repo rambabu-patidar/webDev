@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        body{
+            font: 1.5rem sans-serif;
+            background-color: #f2f2ee;
+            min-height: 100vh;
+            display: flex;
+            flex-flow: column nowrap;
+            justify-content: center;
+            align-items: center;
+            /* gap: 1rem; */
+        }
+        header{
+            width: 100%;
+            text-align: center;
+            border-bottom: 1px solid black;;
+            padding: 1rem;
+        }
+        form label, form select {
+            font: inherit;
+        }
+        
+        main {
+            padding: 2rem;
+            flex-grow: 1;
+            display: grid;
+            grid-template-columns: repeat(6, 1fr);
+            grid-template-areas:
+            "f f s s s s";
+            gap: 2rem;
+            justify-content: center;
+            align-items: center;
+        }
+        form {
+            grid-area: f;
+            display: flex;
+            justify-content: center;
+            flex-wrap: wrap;
+        }
+
+        form:hover {
+            box-shadow: 1px 1px 5px 2px black;
+            transition: all 0.3s;
+        }
+        form select {
+            background: rgb(125, 138, 148);;
+            color: white;
+            outline: none;
+            border: none;
+            padding:0 1rem;
+            background-color: rgb(147, 164, 176);
+            border-radius: 5px;
+        }
+        section {
+            color: white;
+            grid-area: s;
+            display: flex;
+            flex-flow: column nowrap;
+            gap: 2rem;
+            justify-content: center;
+            align-items: center;
+        }
+        
+        form, section {
+            border-radius: 10px;
+            padding: 3rem 0;
+            background-color: rgb(125, 138, 148);
+        }
+        section h2 {
+            font-size: 2em;;
+        }
+        section div {
+            display: flex;
+            flex-flow: row wrap;
+            gap: 1rem;
+            justify-content: flex-start;
+        }
+        #dates {
+            width: 80%;
+        }
+        #dates div {
+            min-width: 5rem;
+            min-height: 4rem;
+            background-color: rgb(113, 52, 244);
+            display: grid;
+            place-content: center;
+        }
+
+        #dates div:hover {
+            transform:scale(1.07);
+            border: 2px solid white;
+            box-shadow: 1px 1px 5px 2px white ,1px 1px 5px 2px white;
+            
+        }
+    </style>
+    <script src="main.js" defer></script>
+</head>
+<body>
+    <header>
+        <h1>A Simple Calender</h1>
+    </header>
+
+    <main>
+        
+        <form action="post">
+            <label for="month">Select a Month: </label>
+            <select name="month" id="month">
+                <!-- <option value="" selected>--Click to select--</option> -->
+                <option value="January" selected>January</option>
+                <option value="February">February</option>
+                <option value="March">March</option>
+                <option value="April">April</option>
+                <option value="May">May</option>
+                <option value="June">June</option>
+                <option value="July">July</option>
+                <option value="August">August</option>
+                <option value="September">September</option>
+                <option value="October">October</option>
+                <option value="November">November</option>
+                <option value="December">December</option>
+            </select>
+        </form>
+        <section>
+            <h2 id="heading-month"></h2>
+            <div id="dates">
+
+            </div>
+        </section>
+    </main>
+</body>
+</html>
