@@ -1,0 +1,84 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font: 1.5rem "Roboto", sans-serif;
+  min-height: 100vh;
+}
+
+button {
+  font: inherit;
+}
+
+.container {
+  height: 100vh;
+  display: flex;
+  flex-flow: column nowrap;
+  justify-content: center;
+  align-items: center;
+  background-color: #39393a;
+  color: #e6e6e6;
+}
+
+header {
+  flex-basis: 10vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+header h1{
+  text-align: center;
+  padding: 2rem 0;
+}
+main {
+  flex-grow: 1;
+  display: flex;
+  flex-flow: column nowrap;
+  justify-content: center;
+  align-items: center;
+  width:70%;
+}
+
+#time {
+  padding: 0 0 5rem 0;
+  font-size: 2rem;
+}
+
+.flag-list {
+  padding: 0 0 3rem 0;
+}
+
+.buttons {
+  width: 100%;
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: center;
+  align-items: center;
+  gap: 1rem;
+}
+.buttons button {
+  flex: 1;
+  padding: 2rem 0;
+  border: 2px solid white;
+  border-radius: 5px;
+  background-color: #20a4f3;
+  color: white;
+}
+
+.buttons button:hover {
+  background-color: #e0e0e2;
+  color: black;
+  transition: all ease-in .2s;
+}
+
+@media screen and (max-width: 570px) {
+  .buttons button {
+    padding: 0.5rem 0;
+  }
+}

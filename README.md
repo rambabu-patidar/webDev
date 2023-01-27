@@ -34,3 +34,5 @@
 15. [13 Simple calender](https://rambabu-patidar.github.io/webDev/13%20Simple%20calender/)
 
 16. [14 Expanding cards](https://rambabu-patidar.github.io/webDev/14%20Expanding%20cards/)
+
+17. [15 Simple stopwatch](https://rambabu-patidar.github.io/webDev/15%20Simple%20stopwatch/)
