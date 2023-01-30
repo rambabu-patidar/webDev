@@ -1,0 +1,27 @@
+@import url('https://fonts.googleapis.com/css2?family=Orbitron&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font: bold 5rem "Orbitron", sans-serif;
+}
+
+.container {
+    min-height: 100vh;
+    position: relative;
+    background-color: #efa8b8;
+}
+
+p {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+ /* coolors.co for mesmerizing color*/
+    color: #000000;
+    letter-spacing: 7px;
+}

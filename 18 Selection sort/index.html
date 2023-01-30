@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Selection Sort</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="selection.js" defer></script>
+</head>
+
+<body>
+    <header>
+        <h1>Selection Sort</h1>
+        <nav>
+            <div class="buttons">
+                <button class="generate">Generate new Array</button>
+                <button class="start">Start</button>
+            </div>
+            <div class="control">
+                <span class="nowrap slider">
+                    <label for="size">Size</label>
+                    <input type="range" name="size" id="size" min="1" max="100">
+                </span>
+                <span class="nowrap slider">
+                    <label for="speed">Speed</label>
+                    <input type="range" name="speed" id="speed" min="10" max="500" value="100">
+                </span>
+            </div>
+        </nav>
+    </header>
+    <main>
+        <ul class="array"></ul>
+    </main>
+    <footer>
+        <div class="codes">
+            <div class="name">Sorted Array</div>
+            <div class="sorted color-box"></div>
+        </div>
+
+        <div class="codes">
+            <div class="name">Cureent Minimum</div>
+            <div class="current-minimum color-box"></div>
+        </div>
+
+        <div class="codes">
+            <div class="name">Current Element</div>
+            <div class="current-element color-box"></div>
+        </div>
+        <div class="codes">
+            <div class="name">Remaining Array</div>
+            <div class="remaining-array color-box"></div>
+        </div>
+    </footer>
+</body>
+
+</html>

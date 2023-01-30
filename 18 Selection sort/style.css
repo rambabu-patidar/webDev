@@ -1,0 +1,151 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: sans-serif;
+    min-height: 100vh;
+    background-color: #0a0b0b;
+    color: white;
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: center;
+    align-items: center;
+    background-image: url(background.png);
+    background-size:contain;
+}
+
+header {
+    width: 100vw;
+    text-align: center;
+    border-bottom:1px solid #f2f2ee;
+    padding: 2rem;
+}
+
+h1 {
+    font-size: 3rem;
+    padding-bottom: 0.5rem;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.generate, .start {
+    color: black;
+    background-color: #cbcbcb;
+    padding: 1rem 2rem;
+    outline: none;
+    border-radius: 10px;
+    font-family: inherit;
+    font-size: 1.5rem;
+    cursor: pointer;
+}
+
+.disabledBtn {
+    background-color: rgb(91, 91, 91);
+    color: white;
+    cursor: not-allowed;
+}
+.control {
+    display: inline-block;
+    font-size: 1.5rem;
+}
+
+.nowrap {
+    white-space: nowrap;
+}
+
+.slider {
+    display: inline-block;
+    padding: 1rem 2rem;
+}
+
+.slider input {
+    cursor: pointer;
+}
+main {
+    flex-grow: 1;
+    padding-top: 3rem;
+}
+
+ul {
+    list-style-type: none;
+}
+
+.array { 
+    display: flex;
+    flex-flow: row nowrap;
+    align-items: flex-end;
+}
+
+.element {
+    width: 10px;
+    background-color: rgb(227, 201, 4);
+    border: 1px solid black;;
+}
+
+footer {
+    width: 100vw;
+    flex-grow: 1;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.codes {
+    flex-basis: 200px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+.color-box {
+    width: 20px;
+    height: 10px;
+    
+}
+
+.sorted {
+    background-color: green;
+}
+
+.current-minimum {
+    background-color: white;
+}
+
+.current-element {
+    background-color: red;
+}
+
+.remaining-array{
+    background-color: rgb(227, 201, 4);
+}
+@media screen and (max-width: 1000px) {
+    nav {
+        flex-flow: column-reverse;
+    }
+    .slider {
+        padding: 0.5rem;
+    }
+}
+
+@media screen and (max-width:600px) {
+    .generate, .start{
+        padding: 0.5rem 1rem;
+        font-size: 1rem;
+    }
+    .control {
+        font-size: 1rem;
+    }
+    footer {
+        margin-top: 2rem;
+    }
+    .codes {
+        margin: 0.5rem 0;
+    }
+}

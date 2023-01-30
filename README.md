@@ -36,3 +36,9 @@
 16. [14 Expanding cards](https://rambabu-patidar.github.io/webDev/14%20Expanding%20cards/)
 
 17. [15 Simple stopwatch](https://rambabu-patidar.github.io/webDev/15%20Simple%20stopwatch/)
+
+18. [16 Digital clock](https://rambabu-patidar.github.io/webDev/16%20Digital%20clock/)
+
+19. [17 Quote generator](https://rambabu-patidar.github.io/webDev/17%20Quote%20generator/)
+
+20. [18 Selection sort](https://rambabu-patidar.github.io/webDev/18%20Selection%20sort/)
