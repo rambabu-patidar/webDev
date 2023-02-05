@@ -15,3 +15,5 @@
 8. [08 Flexbox II](https://rambabu-patidar.github.io/webDev/001.1%20CSS/CSS-PROJECTS/08%20Flexbox%20II/)
 
 9. [09 Ableton Website](https://rambabu-patidar.github.io/webDev/001.1%20CSS/CSS-PROJECTS/09%20Ableton%20website/)
+
+10. [10 Animating Grids](https://rambabu-patidar.github.io/webDev/001.1%20CSS/CSS-PROJECTS/10%20Animating%20grids/)

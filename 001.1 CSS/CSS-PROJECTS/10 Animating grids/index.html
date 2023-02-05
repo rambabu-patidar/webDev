@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Grid Animation</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        .grid {
+            min-height: 100vh;
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            grid-template-rows: 1fr 1fr;
+            background-color: rgb(255, 0, 0);
+            gap: 3px;
+            transition: all 500ms ease-out;
+        }
+
+        .panels {
+            background-color: rgba(255, 217, 0, 0.607);
+            display: grid;
+            grid-template-columns: 1fr 0fr;
+            transition: all 700ms ease-in-out;
+        }
+
+        .heading {
+            display: grid;
+            place-content: center;
+        }
+
+        .content {
+            background-color: black;
+            color: white;
+            padding: 1rem;
+            font-size: 3rem;
+            font-family: sans-serif;
+        }
+
+        .grid:has(.first:hover) {
+            grid-template-columns: 2fr 1fr;
+            grid-template-rows: 2fr 1fr;
+        }
+
+        .grid:has(.second:hover) {
+            grid-template-columns: 1fr 2fr;
+            grid-template-rows: 2fr 1fr;
+        }
+
+        .grid:has(.third:hover) {
+            grid-template-columns: 2fr 1fr;
+            grid-template-rows: 1fr 2fr;
+        }
+
+        .grid:has(.fourth:hover) {
+            grid-template-columns: 1fr 2fr;
+            grid-template-rows: 1fr 2fr;
+        }
+
+        .image {
+            background-color: rgb(71, 135, 255);
+            background-image: radial-gradient(white, rgb(71, 135, 255));
+        }
+
+        :where(.first, .second, .third, .fourth):hover {
+            grid-template-columns: 1fr 1fr;
+            background-color: gold;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="grid">
+        <div class="panels first">
+
+            <div class="heading">
+                <div class="content">Pizzaz</div>
+            </div>
+
+            <div class="image"></div>
+        </div>
+
+
+        <div class="panels second">
+            <div class="heading">
+                <div class="content">Pizzaz</div>
+            </div>
+            <div class="image"></div>
+        </div>
+        <div class="panels third">
+            <div class="heading">
+                <div class="content">Pizzaz</div>
+            </div>
+            <div class="image"></div>
+        </div>
+        <div class="panels fourth">
+            <div class="heading">
+                <div class="content">Pizzaz</div>
+            </div>
+            <div class="image"></div>
+        </div>
+    </div>
+</body>
+
+</html>
