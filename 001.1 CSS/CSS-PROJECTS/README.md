@@ -17,3 +17,5 @@
 9. [09 Ableton Website](https://rambabu-patidar.github.io/webDev/001.1%20CSS/CSS-PROJECTS/09%20Ableton%20website/)
 
 10. [10 Animating Grids](https://rambabu-patidar.github.io/webDev/001.1%20CSS/CSS-PROJECTS/10%20Animating%20grids/)
+
+11. [11 Fancy Search](https://rambabu-patidar.github.io/webDev/001.1%20CSS/CSS-PROJECTS/11/%20Fancy%20search/)

@@ -1,0 +1,232 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: aliceblue;
+    font-family: sans-serif;
+    min-height: 100vh;
+    font-size: clamp(1.2rem, 2.5vh, 1.5rem);
+    display: flex;
+    flex-flow: column;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 3rem;
+}
+
+nav{
+    width: 100%;
+    padding: 1rem 1rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: rgb(255, 255, 255);
+}
+
+
+.logo{
+    min-width:150px;
+    height: 50px;
+    border-radius: 10px;
+    background-color: pink;
+    display: grid;
+    place-content: center;
+    font-weight: bolder;
+    font-size: 1.5rem;
+    transition: .3s;
+}
+.logo:hover{
+    color: white;
+    background-color: #333;;
+}
+
+
+
+.humburger::after, .humburger::before, .humburger{
+    width: 30px;
+    height: 5px;
+    background-color:black;
+    transition: all 0.3s;
+    cursor: pointer;
+}
+.humburger{
+    display: none; 
+    position: relative;
+}
+
+.humburger::after, .humburger::before{
+    content: "";
+    position: absolute;
+}
+.humburger::before{
+    top: -10px;
+}
+.humburger::after {
+    bottom: -10px;
+}
+
+.humburger.animate::before{
+    transform:translateY(10px) rotate(-45deg);
+    background-color: red;
+}
+
+.humburger.animate::after{
+    transform: translateY(-10px) rotate(45deg);
+    background-color: red;
+}
+.humburger.animate{
+    transform: rotate(360deg);
+    background-color: transparent;
+}
+
+ul {
+    list-style: none;
+    display: flex;
+    flex-flow: row nowrap;
+}
+
+
+.page-links ul li {
+    margin: 0 1rem;
+    transition: .2s;
+    position: relative;
+    cursor: pointer;
+}
+
+.page-links ul li::before{
+    content: "";
+    width: 100%;
+    height: 2px;
+    background-color: aqua;
+    position: absolute;
+    top: 25px;
+    transform-origin: right;
+    transform: scale(0);
+    transition:transform .3s;
+}
+
+.page-links ul li:hover::before{
+    transform: scale(1);
+    transform-origin: left;
+}
+.socials ul li {
+    margin: 0 0.5rem;
+    transition: 0.3s;
+    cursor: pointer;
+}
+
+.socials ul li:hover{
+    transform: rotate(360deg);
+}
+h1{
+    border-bottom: 5px solid skyblue;
+}
+
+img{
+    width: 250px;
+    height: auto;
+    border-radius: 50%;
+    outline: 5px solid black;;
+}
+.container {
+    background-color: rgb(255, 255, 255);
+    max-width: 650px;
+    padding: 1rem;
+    border-radius: 20px;
+    display: flex;
+    flex-flow: column nowrap;
+    align-items: center;
+    justify-content: center;
+    gap: 0.5rem;
+    text-align: center;
+    box-shadow: 1px 1px 20px 2px rgba(0, 0, 0, 0.152);
+    margin: 0 1rem;
+    
+}
+
+button{
+    font:inherit;
+    background-color: rgb(255, 166, 0);
+    border: 2px solid black;
+    border-radius: 10px;
+    padding: 0.25em;
+}
+
+.navigations {
+    cursor: pointer;
+    font-size: 1.5rem;
+    transition: .3s;
+}
+
+/* showing menu when show-links class is added */
+.page-links.show-links, .socials.show-links{
+    display: block;
+    transform-origin: top;
+    transition: all 0.5s;
+    animation: showLinks 0.5s ease-in-out 0.05s 1 forwards;
+}
+
+@keyframes showLinks {
+    0% {
+        transform: scaleY(0);
+    } 80% {
+        transform: scaleY(1.1);
+    } 100%{
+        transform: scaleY(1);
+    }
+}
+
+@media screen and (max-width: 850px) {
+    nav{
+        display: block;
+        padding-bottom: 0;
+        box-shadow: 0 2px 10px black;;
+    }
+    .page-links, .socials{
+        display: none;
+    }
+    .logo-humburger{
+        width: 100%;
+        padding-bottom: 1rem;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+    .humburger{
+        display: block;
+    }
+    img{
+        width: 175px;
+    }
+    .page-links ul {
+        display: block;
+        text-align: center;
+    }
+    .page-links ul li {
+        margin: 0;
+        padding: 1rem 0;
+        border-bottom: 1px solid black;
+    }
+    .page-links ul li:hover{
+        color: white;
+        background-color: black;
+    }
+    .page-links ul li::before{
+        display: none;
+    }
+    .socials ul{
+        justify-content: center;
+    }
+    .socials ul li{
+        padding: 1rem 0;
+        flex-grow: 1;
+        text-align: center;
+    }
+    .socials ul li:hover {
+        transform: none;
+        background-color: black;
+        color: white;
+    }
+}

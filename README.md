@@ -42,3 +42,7 @@
 19. [17 Quote generator](https://rambabu-patidar.github.io/webDev/17%20Quote%20generator/)
 
 20. [18 Selection sort](https://rambabu-patidar.github.io/webDev/18%20Selection%20sort/)
+
+21. [19 Color flipper](https://rambabu-patidar.github.io/webDev/19%20Color%20flipper/)
+
+22. [20 Nav bar](https://rambabu-patidar.github.io/webDev/20%20Nav%20bar/)
