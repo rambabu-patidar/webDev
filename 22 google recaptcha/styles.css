@@ -1,0 +1,162 @@
+@font-face {
+  font-family: "MonoLisa";
+  src: url(./fonts/Regular.otf) format(".otf");
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+ul {
+  list-style-type: none;
+}
+
+
+body {
+  color: white;
+  font-family: "MonoLisa";
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #6c6969;
+}
+
+body form {
+  margin: 1rem 0;
+  background-color: black;
+  padding: 3rem;
+  border-radius: 15px;
+}
+
+body form:hover,
+body form:focus-within {
+  box-shadow: 0 0 10px white;
+}
+
+.heading {
+  margin-bottom: 0.5rem;
+  text-align: center;
+}
+
+.detail label {
+  display: inline-block;
+  padding: .5rem 0;
+}
+
+.detail input {
+  display: block;
+  width: 100%;
+  padding: 0.5rem;
+  border-radius: 5px;
+  border: none;
+  background: rgb(75, 75, 75);
+  color: white;
+  font-family: inherit;
+}
+
+.detail input:focus {
+  background: rgb(80, 80, 80);
+}
+
+.detail {
+  margin-top: 1rem;
+}
+
+.detail.conditions input {
+  display: inline;
+  width: auto;
+}
+
+.password-input-box {
+  position: relative;
+}
+
+.password-input-box img {
+  position: absolute;
+  right: 10px;
+  bottom: 5px;
+  cursor: pointer;
+}
+
+.password-rules {
+  font-size: small;
+  display: none;
+}
+
+
+.password-rules.focus {
+  display: block;
+}
+
+.password-rule-1.hide,
+.password-rule-2.hide,
+.password-rule-3.hide {
+  display: none;
+}
+
+#confirm-password.different {
+  outline: 1px solid red;
+  box-shadow: 0 0 5px red;
+}
+
+.detail.conditions label {
+  font-size: small;
+}
+
+.detail.conditions a {
+  color: darkorange;
+  text-decoration: none;
+}
+
+.actions {
+  margin-top: 1rem;
+}
+
+.actions button {
+  display: block;
+  width: 100%;
+  text-align: center;
+  margin: 1rem 0 0;
+  padding: 0.7rem;
+  border-radius: 5px;
+  border: none;
+  background: #ff9615e1;
+  cursor: pointer;
+  font-family: inherit;
+  font-weight: bold;
+}
+
+.actions button:focus,
+.actions button:hover {
+  outline: none;
+  background: darkorange;
+}
+
+.error-message {
+  color: red;
+  display: none;
+  margin-top: 0.5rem;
+}
+
+.error-message.show {
+  display: block;
+}
+
+@media screen and (max-width: 650px) {
+  body {
+    display: block;
+    padding: 1rem;
+
+  }
+
+  body form {
+    padding: 1rem;
+  }
+
+  .g-recaptcha {
+    width: 100%;
+  }
+}

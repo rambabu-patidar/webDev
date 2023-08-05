@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Google Recaptcha</title>
+  <script src="https://www.google.com/recaptcha/api.js"></script>
+  <link rel="stylesheet" href="./styles.css">
+  <script src="main.js" defer></script>
+</head>
+
+<body>
+  <form action="" method="post" class="login-form">
+    <div class="heading">Create your account</div>
+    <div class="details">
+      <div class="detail">
+        <label for="name">Name</label>
+        <input type="text" name="name" id="name" placeholder="Rambabu Patidar" autocomplete="off">
+      </div>
+      <div class="detail">
+        <label for="email">Email</label>
+        <input type="email" name="email" id="email" placeholder="patidarrambabu135@gmail.com" autocomplete="off">
+      </div>
+      <div class="detail">
+        <label for="password">Password</label>
+        <div class="password-input-box">
+          <input type="password" name="password" id="password" placeholder="Enter Password" type="password"
+            autocomplete="off">
+          <img src="./images/blocked-eye.svg" class="input-password-img" alt="blocked-eye-image" width="20px"
+            height="20px">
+        </div>
+        <div class="password-rules">
+          <ul>
+            <li class="password-rule-1">Password must contain 8 characters.</li>
+            <li class="password-rule-2">Must include at least 1 digit and 1 underscore</li>
+            <li class="password-rule-3">Must include one uppercase character.</li>
+          </ul>
+        </div>
+      </div>
+      <div class="detail">
+        <label for="confirm-password">Confirm Password</label>
+        <div class="password-input-box">
+          <input type="password" name="confirm-password" id="confirm-password" placeholder="Confirm Password"
+            type="password" autocomplete="off">
+          <img src="./images/blocked-eye.svg" class="confirm-password-img" alt="blocked-eye-image" width="20px"
+            height="20px">
+        </div>
+      </div>
+      <div class="detail conditions">
+        <input type="checkbox" name="term-condition" id="term-condition">
+        <label for="term-condition">I agree to <a href="https://www.example.com/">privacy policy</a> and <a
+            href="https://www.example.com">term and conditions.</a></label>
+      </div>
+    </div>
+    <div class="actions">
+      <div class="g-recaptcha" data-sitekey="6LdLJoEnAAAAAMqc77SCSETfTnJO-9bFv73WkW3j" data-theme="dark"></div>
+      <button type="submit" class="submit-button">Submit</button>
+    </div>
+    <div class="error-message">Please fill all details correctly!</div>
+  </form>
+
+</body>
+
+</html>
