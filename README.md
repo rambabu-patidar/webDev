@@ -18,10 +18,6 @@ This repository contain all the projects(small or big) I made while learning and
 |Color flipper|[Link](https://rambabu-patidar.github.io/webDev/19%20Color%20flipper/)|Nav bar|[Link](https://rambabu-patidar.github.io/webDev/20%20Nav%20bar/)|
 |FormData Method|[Link](https://rambabu-patidar.github.io/webDev/21%20FormData%20Method/)|Login Form Google reCAPTCHA|[Link](https://rambabu-patidar.github.io/webDev/22%20login%20form%20google%20recaptcha/)|
 
-## CSS Projects Links
+## **[CSS Projects Links](https://rambabu-patidar.github.io/webDev/001%20HTML/)**
 
-[001 HTML](https://rambabu-patidar.github.io/webDev/001%20HTML/)
-
-## HTML Projects Links
-
-[001.1 CSS ](https://rambabu-patidar.github.io/webDev/001.1%20CSS/)
+## **[HTML Projects Links](https://rambabu-patidar.github.io/webDev/001.1%20CSS/)**
