@@ -1,4 +1,4 @@
-# CSS Projects Links
+# CSS Learning Projects Links
 
 |Name|Links|Name|Links|
 |----|-----|----|-----|
@@ -10,4 +10,4 @@
 |Animation|[Link](https://rambabu-patidar.github.io/webDev/001.1%20CSS/11%20Animation)|
 
 
-## **[CSS PROJECTS](https://rambabu-patidar.github.io/webDev/001.1%20CSS/CSS-PROJECTS)**
+## **[CSS Practise Projects](https://rambabu-patidar.github.io/webDev/001.1%20CSS/CSS-PROJECTS) (10+ projects)**
